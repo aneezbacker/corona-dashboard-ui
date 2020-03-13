@@ -12,19 +12,19 @@ export interface StateWiseDistribution {
 
 // TODO: load from database
 const stateWiseDistributionData: StateWiseDistribution[] = [
+  {state: 'Andhra Pradesh', confirmed: 1, cured: 0, deaths: 0},
   {state: 'Delhi', confirmed: 7, cured: 1, deaths: 1},
   {state: 'Haryana', confirmed: 4, cured: 0, deaths: 0},
-  {state: 'Kerala', confirmed: 19, cured: 3, deaths: 0},
-  {state: 'Rajasthan', confirmed: 3, cured: 1, deaths: 0},
-  {state: 'Telengana', confirmed: 1, cured: 0, deaths: 0},
-  {state: 'Uttar Pradesh', confirmed: 11, cured: 5, deaths: 0},
-  {state: 'Ladakh (UT)', confirmed: 3, cured: 0, deaths: 0},
-  {state: 'Tamil Nadu', confirmed: 1, cured: 0, deaths: 0},
-  {state: 'Jammu and Kashmir (UT)', confirmed: 1, cured: 0, deaths: 0},
-  {state: 'Punjab', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Jammu & Kashmir (UT)', confirmed: 1, cured: 0, deaths: 0},
   {state: 'Karnataka', confirmed: 6, cured: 0, deaths: 1},
+  {state: 'Kerala', confirmed: 19, cured: 3, deaths: 0},
+  {state: 'Ladakh (UT)', confirmed: 3, cured: 0, deaths: 0},
   {state: 'Maharashtra', confirmed: 14, cured: 0, deaths: 0},
-  {state: 'Andhra Pradesh', confirmed: 1, cured: 0, deaths: 0}
+  {state: 'Punjab', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Rajasthan', confirmed: 3, cured: 1, deaths: 0},
+  {state: 'Tamil Nadu', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Telengana', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Uttar Pradesh', confirmed: 11, cured: 5, deaths: 0}
 ];
 
 
@@ -41,6 +41,7 @@ export class HomePageComponent implements OnInit {
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   ngOnInit(): void {
+    this.sort.sort({ id: 'confirmed', start: 'desc', disableClear: false });
     this.dataSource.sort = this.sort;
   }
 

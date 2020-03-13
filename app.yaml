@@ -2,8 +2,10 @@ runtime: python27
 api_version: 1
 threadsafe: true
 handlers:
-- url: /
+- url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
+  static_files: dist/corona-dashboard-ui/\1
+  upload: dist/(.*)(|\.map)
+
+- url: /(.*)
   static_files: dist/corona-dashboard-ui/index.html
   upload: dist/corona-dashboard-ui/index.html
-- url: /
-  static_dir: dist/corona-dashboard-ui
