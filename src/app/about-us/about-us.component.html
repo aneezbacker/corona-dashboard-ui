@@ -1,1 +1,5 @@
-<p>email: corona.info.in@gmail.com</p>
+<span>
+    Email:
+  <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">click to reveal</button>
+  <span *ngIf="showEmail">{{email}}</span>
+</span>

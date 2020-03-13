@@ -1,4 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+
+
+export interface StateWiseDistribution {
+  state: string;
+  confirmed: number;
+  cured: number;
+  deaths: number;
+}
+
+// TODO: load from database
+const stateWiseDistributionData: StateWiseDistribution[] = [
+  {state: 'Delhi', confirmed: 7, cured: 1, deaths: 1},
+  {state: 'Haryana', confirmed: 4, cured: 0, deaths: 0},
+  {state: 'Kerala', confirmed: 19, cured: 3, deaths: 0},
+  {state: 'Rajasthan', confirmed: 3, cured: 1, deaths: 0},
+  {state: 'Telengana', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Uttar Pradesh', confirmed: 11, cured: 5, deaths: 0},
+  {state: 'Ladakh (UT)', confirmed: 3, cured: 0, deaths: 0},
+  {state: 'Tamil Nadu', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Jammu and Kashmir (UT)', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Punjab', confirmed: 1, cured: 0, deaths: 0},
+  {state: 'Karnataka', confirmed: 6, cured: 0, deaths: 1},
+  {state: 'Maharashtra', confirmed: 14, cured: 0, deaths: 0},
+  {state: 'Andhra Pradesh', confirmed: 1, cured: 0, deaths: 0}
+];
+
 
 @Component({
   selector: 'app-home-page',
@@ -7,9 +35,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  displayedColumns = ['state', 'confirmed', 'cured', 'deaths'];
+  dataSource = new MatTableDataSource(stateWiseDistributionData);
+
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   ngOnInit(): void {
+    this.dataSource.sort = this.sort;
   }
 
 }

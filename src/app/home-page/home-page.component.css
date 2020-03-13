@@ -1,0 +1,17 @@
+mat-table {
+  width: 100%;
+}
+
+.mat-header-row{
+  background-color:#d7d7d7;
+}
+
+.mat-row:nth-child(even){
+  background-color:#f3f3f3;
+}
+
+.mat-row:nth-child(odd){
+  background-color:#fbfbfb;
+}
+
+

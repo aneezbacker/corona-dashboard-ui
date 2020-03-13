@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-about-us',
@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+  showRevealButton = true;
+  showEmail = false;
+  email = '';
+
+  constructor() {
+  }
+
+  public onRevealBtnClick(): void {
+    this.showRevealButton = false;
+    this.showEmail = true;
+    this.email = 'corona.info.in@gmail.com';
+  }
 
   ngOnInit(): void {
   }

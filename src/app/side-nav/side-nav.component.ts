@@ -11,10 +11,6 @@ export class SideNavComponent implements OnDestroy {
 
   mediaQueryList: MediaQueryList;
 
-//  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
-
-  shouldRun = true;
-
   private mediaQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, mediaMatcher: MediaMatcher) {
