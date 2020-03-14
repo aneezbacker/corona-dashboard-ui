@@ -24,6 +24,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatListModule,
     MatCardModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

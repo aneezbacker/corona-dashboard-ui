@@ -18,6 +18,11 @@ export class HelplineComponent implements OnInit {
   displayedColumns = ['state', 'helplineNo'];
   dataSource: any;
 
+  showRevealButton = true;
+  showEmail = false;
+  email = '';
+
+
   @ViewChild(MatSort, {static: true})
   sort: MatSort;
 
@@ -36,4 +41,9 @@ export class HelplineComponent implements OnInit {
     });
   }
 
+  public onRevealBtnClick(): void {
+    this.showRevealButton = false;
+    this.showEmail = true;
+    this.email = 'ncov2019@gmail.com';
+  }
 }

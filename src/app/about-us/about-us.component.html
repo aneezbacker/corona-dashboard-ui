@@ -1,24 +1,24 @@
 <div class="parent-container">
   <div class="dialogue-container">
 
-    <label class="speaker">The Wolf :</label> <span class="dialogue">You're... Jimmie, right? This is your house?</span>
+    <span class="speaker">The Wolf :</span> <span class="dialogue">You're... Jimmie, right? This is your house?</span>
     <br/>
-    <label class="speaker">Jimmie :</label> <span class="dialogue">Sure is.</span>
+    <span class="speaker">Jimmie :</span> <span class="dialogue">Sure is.</span>
     <br/>
-    <label class="speaker">The Wolf :</label> <span class="dialogue">I'm Winston Wolfe. I solve problems.</span>
+    <span class="speaker">The Wolf :</span> <span class="dialogue">I'm Winston Wolfe. I solve problems.</span>
     <br/>
-    <label class="speaker">Jimmie :</label> <span class="dialogue">Good, we got one.</span>
+    <span class="speaker">Jimmie :</span> <span class="dialogue">Good, we got one.</span>
     <br/>
-    <label class="speaker">The Wolf :</label> <span class="dialogue">So I heard. May I come in?</span>
+    <span class="speaker">The Wolf :</span> <span class="dialogue">So I heard. May I come in?</span>
     <br/>
-    <label class="speaker">Jimmie :</label> <span class="dialogue">Uh, yeah, please do.</span>
+    <span class="speaker">Jimmie :</span> <span class="dialogue">Uh, yeah, please do.</span>
 
   </div>
 
   <div class="email-container">
     <span>
       <mat-icon aria-hidden="false" aria-label="email" class="sidenav-icon">email</mat-icon>
-      <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">click to reveal</button>
+      <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
       <span *ngIf="showEmail">{{email}}</span>
     </span>
   </div>

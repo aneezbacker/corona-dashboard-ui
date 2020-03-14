@@ -5,14 +5,20 @@
     <mat-card class="summary-data-card">
       <mat-card-header>
         <mat-card-title>All India Helpline</mat-card-title>
+
         <mat-card-subtitle>
           <mat-icon aria-hidden="false" aria-label="phone" class="sidenav-icon">phone</mat-icon>
           <span class="card-subtitle-data">+91-11-23978046</span>
         </mat-card-subtitle>
+
         <mat-card-subtitle>
           <mat-icon aria-hidden="false" aria-label="email" class="sidenav-icon">email</mat-icon>
-          <span class="card-subtitle-data">ncov2019[at]gmail[dot]com</span>
+          <span class="card-subtitle-data">
+            <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
+            <span *ngIf="showEmail">{{email}}</span>
+          </span>
         </mat-card-subtitle>
+
       </mat-card-header>
     </mat-card>
     <!-- All India helpline ENDS -->

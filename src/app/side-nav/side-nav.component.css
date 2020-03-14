@@ -33,3 +33,7 @@ h1.example-app-name {
 .sidenav-icon{
   padding-right: 5px;
 }
+
+.hide-text {
+  color: transparent;
+}

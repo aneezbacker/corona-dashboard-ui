@@ -7,6 +7,10 @@
   float: left;
 }
 
+.small-font{
+  font-size: small;
+}
+
 .blue {
   background-color: #F7F6FF;
 }
