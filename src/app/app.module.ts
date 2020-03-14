@@ -14,6 +14,8 @@ import {HealthTipsComponent} from './health-tips/health-tips.component';
 import {LatestNewsComponent} from './latest-news/latest-news.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {SummaryDataBoxComponent} from './summary-data-box/summary-data-box.component';
+import {TravelComponent} from './travel/travel.component';
+import {HelplineComponent} from './helpline/helpline.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -22,6 +24,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import {MatSortModule} from '@angular/material/sort';
     HealthTipsComponent,
     LatestNewsComponent,
     PageNotFoundComponent,
-    SummaryDataBoxComponent
+    SummaryDataBoxComponent,
+    TravelComponent,
+    HelplineComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+.summary-data-container {
+}
+
+.summary-data-card {
+  margin-bottom: 5px;
+}
+
+.state-wise-helpline-container {
+  margin-top: 15px;
+}
+
+.mat-header-row {
+  background-color: #d7d7d7;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: #fbfbfb;
+}
+
+.sidenav-icon {
+}
+
+.card-subtitle-data {
+  padding-left: 15px;
+}

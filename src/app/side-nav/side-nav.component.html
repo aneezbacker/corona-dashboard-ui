@@ -15,11 +15,42 @@
                  [opened]="!mediaQueryList.matches"
                  role="navigation">
       <mat-nav-list>
-        <a mat-list-item [routerLink]="'/home-page'">Home Page</a>
-        <a mat-list-item [routerLink]="'/global-cases'">Global Cases</a>
-        <a mat-list-item [routerLink]="'/health-tips'">Health Tips</a>
-        <a mat-list-item [routerLink]="'/latest-news'">Latest News</a>
-        <a mat-list-item [routerLink]="'/about-us'">About Us</a>
+
+        <a mat-list-item [routerLink]="'/home-page'">
+          <mat-icon aria-hidden="false" aria-label="Home" class="sidenav-icon">home</mat-icon>
+          Home Page
+        </a>
+
+        <a mat-list-item [routerLink]="'/global-cases'">
+          <mat-icon aria-hidden="false" aria-label="Global" class="sidenav-icon">language</mat-icon>
+          Global Cases
+        </a>
+
+        <a mat-list-item [routerLink]="'/helpline'">
+          <mat-icon aria-hidden="false" aria-label="Phone" class="sidenav-icon">phone</mat-icon>
+          Helpline
+        </a>
+
+        <a mat-list-item [routerLink]="'/travel'">
+          <mat-icon aria-hidden="false" aria-label="Travel" class="sidenav-icon">flight</mat-icon>
+          Travel
+        </a>
+
+        <a mat-list-item [routerLink]="'/health-tips'">
+          <mat-icon aria-hidden="false" aria-label="Health" class="sidenav-icon">local_hospital</mat-icon>
+          Health Tips
+        </a>
+
+        <a mat-list-item [routerLink]="'/latest-news'">
+          <mat-icon aria-hidden="false" aria-label="NEWS" class="sidenav-icon">library_books</mat-icon>
+          Latest News
+        </a>
+
+        <a mat-list-item [routerLink]="'/about-us'">
+          <mat-icon aria-hidden="false" aria-label="AboutUs" class="sidenav-icon">people</mat-icon>
+          About Us
+        </a>
+
       </mat-nav-list>
     </mat-sidenav>
 

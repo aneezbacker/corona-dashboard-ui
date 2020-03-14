@@ -17,7 +17,7 @@ export class AboutUsComponent implements OnInit {
   public onRevealBtnClick(): void {
     this.showRevealButton = false;
     this.showEmail = true;
-    this.email = 'corona.info.in@gmail.com';
+    this.email = 'corona[dot]info[dot]in[at]gmail.com';
   }
 
   ngOnInit(): void {
