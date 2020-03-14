@@ -8,6 +8,7 @@ import {LatestNewsComponent} from './latest-news/latest-news.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {TravelComponent} from './travel/travel.component';
 import {HelplineComponent} from './helpline/helpline.component';
+import {HumourComponent} from './humour/humour.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'helpline', component: HelplineComponent},
   {path: 'health-tips', component: HealthTipsComponent},
   {path: 'latest-news', component: LatestNewsComponent},
+  {path: 'humour', component: HumourComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}

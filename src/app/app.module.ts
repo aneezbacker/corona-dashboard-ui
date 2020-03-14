@@ -16,6 +16,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {SummaryDataBoxComponent} from './summary-data-box/summary-data-box.component';
 import {TravelComponent} from './travel/travel.component';
 import {HelplineComponent} from './helpline/helpline.component';
+import { HumourComponent } from './humour/humour.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -26,7 +27,6 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatTabsModule} from '@angular/material/tabs';
-
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     PageNotFoundComponent,
     SummaryDataBoxComponent,
     TravelComponent,
-    HelplineComponent
+    HelplineComponent,
+    HumourComponent
   ],
   imports: [
     BrowserModule,
