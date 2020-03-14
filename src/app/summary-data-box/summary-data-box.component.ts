@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {DataService} from '../data.service';
 
 @Component({
   selector: 'app-summary-data-box',
@@ -7,18 +8,18 @@ import {Component, OnInit} from '@angular/core';
 })
 export class SummaryDataBoxComponent implements OnInit {
 
+  @Input()
+  dataSrc: string;
+
   summaryData: any;
 
-  constructor() {
+  constructor(private dataService: DataService) {
   }
 
   ngOnInit(): void {
-    // TODO: load this from backend
-    this.summaryData = {
-      confirmed: 81,
-      cured: 4,
-      deaths: 2
-    };
+    this.dataService.getSummary(this.dataSrc).subscribe(data => {
+      this.summaryData = data;
+    });
   }
 
 }

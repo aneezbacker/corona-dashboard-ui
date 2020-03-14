@@ -2,9 +2,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
+
 import {AppComponent} from './app.component';
 import {SideNavComponent} from './side-nav/side-nav.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HomePageComponent} from './home-page/home-page.component';
 import {AboutUsComponent} from './about-us/about-us.component';
 import {GlobalCasesComponent} from './global-cases/global-cases.component';
@@ -36,6 +38,7 @@ import {MatSortModule} from '@angular/material/sort';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,

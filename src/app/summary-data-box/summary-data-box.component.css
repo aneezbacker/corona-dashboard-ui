@@ -1,8 +1,20 @@
-.summary-data-container{
+.summary-data-container {
   text-align: center;
 }
 
 .summary-data-card {
   margin-bottom: 50px;
   float: left;
+}
+
+.blue {
+  background-color: #F7F6FF;
+}
+
+.green {
+  background-color: #F5FFF6;
+}
+
+.red {
+  background-color: #FFF1EC;
 }

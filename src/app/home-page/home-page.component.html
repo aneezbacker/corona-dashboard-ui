@@ -2,12 +2,13 @@
   <div>
     <h1>Latest Updates</h1>
 
+    <!-- India Summary STARTS -->
     <div style='display: inline-block;'>
-      <app-summary-data-box></app-summary-data-box>
+      <app-summary-data-box dataSrc="summaryIndia"></app-summary-data-box>
     </div>
+    <!-- India Summary ENDS -->
 
-    <!-- state wise break down -->
-
+    <!-- state wise break down STARTS -->
     <div>
       <h2>State-wise Break Up</h2>
       <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
@@ -21,20 +22,21 @@
         <!-- Confirmed Column -->
         <ng-container matColumnDef="confirmed">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Confirmed</th>
-          <td mat-cell *matCellDef="let element" class="left"> {{element.confirmed}} </td>
+          <td mat-cell *matCellDef="let element" class="left"> {{element.confirmed | number: '1.0-0'}} </td>
         </ng-container>
 
         <!-- Cured Column -->
         <ng-container matColumnDef="cured">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Cured</th>
-          <td mat-cell *matCellDef="let element" class="left"> {{element.cured}} </td>
+          <td mat-cell *matCellDef="let element" class="left"> {{element.cured | number: '1.0-0'}} </td>
         </ng-container>
 
         <!-- Deaths Column -->
         <ng-container matColumnDef="deaths">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths</th>
-          <td mat-cell *matCellDef="let element" class="left"> {{element.deaths}} </td>
+          <td mat-cell *matCellDef="let element" class="left"> {{element.deaths | number: '1.0-0'}} </td>
         </ng-container>
+        <!-- state wise break down ENDS -->
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
