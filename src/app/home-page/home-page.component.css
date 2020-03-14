@@ -1,9 +1,13 @@
+.parent-container {
+  padding: 15px 15px 15px 15px;
+}
+
 mat-table {
   width: 100%;
 }
 
-.mat-header-row{
-  background-color:#d7d7d7;
+.mat-header-row {
+  background-color: #d7d7d7;
 }
 
 .left {
@@ -14,12 +18,12 @@ mat-table {
   text-align: right;
 }
 
-.mat-row:nth-child(even){
-  background-color:#f3f3f3;
+.mat-row:nth-child(even) {
+  background-color: #f3f3f3;
 }
 
-.mat-row:nth-child(odd){
-  background-color:#fbfbfb;
+.mat-row:nth-child(odd) {
+  background-color: #fbfbfb;
 }
 
 

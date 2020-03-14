@@ -1,14 +1,16 @@
+.parent-container {
+  padding: 15px 15px 15px 15px;
+}
+
 .dialogue-container {
-  padding: 20px 20px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .email-container {
-  padding: 20px 20px 20px 20px;
 }
 
 .speaker {
   font-weight: bold;
-  padding: 15px 5px 15px 15px;
   color: blue;
 }
 
@@ -17,5 +19,5 @@
 }
 
 .sidenav-icon {
-  padding-right: 20px;
+  padding-right: 15px;
 }
