@@ -1,3 +1,7 @@
 .parent-container {
   padding: 15px 15px 15px 15px;
 }
+
+.small-font{
+  font-size: x-small;
+}
