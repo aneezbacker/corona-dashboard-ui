@@ -26,4 +26,6 @@ mat-table {
   background-color: #fbfbfb;
 }
 
-
+.small-font{
+  font-size: x-small;
+}
