@@ -3,7 +3,8 @@
 }
 
 .summary-data-card {
-  margin-bottom: 50px;
+  max-height: 40px;
+  margin-bottom: 20px;
   float: left;
 }
 
@@ -20,5 +21,9 @@
 }
 
 .red {
+  background-color: #FFF1EC;
+}
+
+.card {
   background-color: #FFF1EC;
 }

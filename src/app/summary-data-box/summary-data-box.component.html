@@ -1,23 +1,23 @@
 <div *ngIf="summaryData" class="summary-data-container">
   <mat-card class="summary-data-card blue" *ngIf="showConfirmedData">
-    <mat-card-header>
+    <mat-card-content>
       <mat-card-subtitle>Confirmed</mat-card-subtitle>
       <mat-card-title class="small-font">{{summaryData.confirmed | number: '1.0-0'}}</mat-card-title>
-    </mat-card-header>
+    </mat-card-content>
   </mat-card>
 
   <mat-card class="summary-data-card red" *ngIf="showDeathData">
-    <mat-card-header>
+    <mat-card-content>
       <mat-card-subtitle>Deaths</mat-card-subtitle>
       <mat-card-title class="small-font">{{summaryData.deaths | number: '1.0-0'}}</mat-card-title>
-    </mat-card-header>
+    </mat-card-content>
   </mat-card>
 
   <mat-card class="summary-data-card green" *ngIf="showCuredData">
-    <mat-card-header>
+    <mat-card-content>
       <mat-card-subtitle>Cured</mat-card-subtitle>
       <mat-card-title class="small-font">{{summaryData.cured | number: '1.0-0'}}</mat-card-title>
-    </mat-card-header>
+    </mat-card-content>
   </mat-card>
 
 </div>

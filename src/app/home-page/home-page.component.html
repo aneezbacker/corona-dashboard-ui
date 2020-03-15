@@ -2,24 +2,29 @@
   <section class="mat-typography">
 
     <!-- India Summary STARTS -->
-    <!-- src: GOI STARTS-->
     <div>
       <h2>All India COVID-19 Cases</h2>
 
+      <!-- src: Media STARTS-->
+      <!--
       <div style='display: inline-block;'>
         <span class="small-font">source: Indian Media</span>
         <app-summary-data-box dataSrc="summaryIndiaMedia" [showConfirmedData]=true [showCuredData]=false [showDeathData]=true></app-summary-data-box>
       </div>
+      -->
+      <!-- src: Media ENDS-->
 
       <br />
 
+      <!-- src: GOI STARTS-->
       <div style='display: inline-block;'>
         <span class="small-font">source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a></span>
         <app-summary-data-box dataSrc="summaryIndiaGoi" [showConfirmedData]=true [showCuredData]=true [showDeathData]=true></app-summary-data-box>
       </div>
+      <!-- src: GOI ENDS -->
+      <br />
+      <br />
     </div>
-    <!-- src: GOI ENDS -->
-
     <!-- India Summary ENDS -->
 
     <div>
