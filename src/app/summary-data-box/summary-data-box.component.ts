@@ -11,6 +11,15 @@ export class SummaryDataBoxComponent implements OnInit {
   @Input()
   dataSrc: string;
 
+  @Input()
+  showConfirmedData: boolean;
+
+  @Input()
+  showCuredData: boolean;
+
+  @Input()
+  showDeathData: boolean;
+
   summaryData: any;
 
   constructor(private dataService: DataService) {

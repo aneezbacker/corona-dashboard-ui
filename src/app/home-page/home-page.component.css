@@ -27,5 +27,9 @@ mat-table {
 }
 
 .small-font{
+  font-size: small;
+}
+
+.xsmall-font{
   font-size: x-small;
 }

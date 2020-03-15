@@ -2,19 +2,34 @@
   <section class="mat-typography">
 
     <!-- India Summary STARTS -->
+    <!-- src: GOI STARTS-->
     <div>
-      <h2>All India COVID-19 Cases <span class="small-font">(source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a>)</span></h2>
+      <h2>All India COVID-19 Cases</h2>
+
       <div style='display: inline-block;'>
-        <app-summary-data-box dataSrc="summaryIndia"></app-summary-data-box>
+        <span class="small-font">source: Indian Media</span>
+        <app-summary-data-box dataSrc="summaryIndiaMedia" [showConfirmedData]=true [showCuredData]=false [showDeathData]=true></app-summary-data-box>
+      </div>
+
+      <br />
+
+      <div style='display: inline-block;'>
+        <span class="small-font">source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a></span>
+        <app-summary-data-box dataSrc="summaryIndiaGoi" [showConfirmedData]=true [showCuredData]=true [showDeathData]=true></app-summary-data-box>
       </div>
     </div>
+    <!-- src: GOI ENDS -->
+
     <!-- India Summary ENDS -->
 
     <div>
-      <h2>State-wise Cases</h2>
+      <h2>State-wise Cases <span class="xsmall-font">(source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a>)</span></h2>
       <mat-tab-group animationDuration="0ms" dynamicHeight="true">
-        <mat-tab label="Tabular">
-
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <span style="color: #605FF9; margin-right:2px">Tabular</span>
+            <mat-icon>table_chart</mat-icon>
+          </ng-template>
             <!-- state wise break down STARTS -->
             <div>
               <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
@@ -49,10 +64,14 @@
               </table>
             </div>
             <!-- state wise break down ENDS -->
-
         </mat-tab>
 
-        <mat-tab label="Interactive Map">
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <span style="font-weight:bold; color:#F95079; margin-right:2px">Interactive Map</span>
+            <mat-icon>location_on</mat-icon>
+          </ng-template>
+
           <ng-template matTabContent>
 
             <!-- Interactive Map STARTS -->
