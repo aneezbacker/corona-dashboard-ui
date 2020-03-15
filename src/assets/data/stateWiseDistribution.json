@@ -43,7 +43,7 @@
   },
   {
     "state": "Maharashtra",
-    "confirmed": 31,
+    "confirmed": 32,
     "cured": 0,
     "deaths": 0
   },
@@ -56,7 +56,7 @@
   {
     "state": "Rajasthan",
     "confirmed": 4,
-    "cured": 0,
+    "cured": 3,
     "deaths": 0
   },
   {
@@ -72,9 +72,15 @@
     "deaths": 0
   },
   {
+    "state": "Uttarakhand",
+    "confirmed": 1,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
     "state": "Uttar Pradesh",
-    "confirmed": 12,
-    "cured": 3,
+    "confirmed": 14,
+    "cured": 4,
     "deaths": 0
   }
 ]
