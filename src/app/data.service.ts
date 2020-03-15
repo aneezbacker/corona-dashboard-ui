@@ -11,6 +11,6 @@ export class DataService {
   }
 
   public getSummary(dataSource): Observable<any> {
-    return this.http.get('./assets/data/' + dataSource + '.json');
+    return this.http.get('https://storage.googleapis.com/corona-dashboard-bucket/data/' + dataSource + '.json');
   }
 }
