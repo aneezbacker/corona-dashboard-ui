@@ -11,6 +11,7 @@ export class DataService {
   }
 
   public getSummary(dataSource): Observable<any> {
-    return this.http.get('https://storage.googleapis.com/corona-dashboard-bucket/data/' + dataSource + '.json');
+    const randomNo = new Date().getTime();
+    return this.http.get('https://storage.googleapis.com/corona-dashboard-bucket/data/' + dataSource + '.json?randomNo=' + randomNo);
   }
 }
