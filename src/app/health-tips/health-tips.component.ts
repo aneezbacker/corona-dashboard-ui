@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-health-tips',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HealthTipsComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('testingAccordion') testingAccordion: MatAccordion;
+  @ViewChild('mythAccordion') mythAccordion: MatAccordion;
+
+  testingPanelOpenState = false;
+  mythPanelOpenState = false;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  toggleTestingAccordion(): void {
+    this.testingPanelOpenState ? this.testingAccordion.closeAll() : this.testingAccordion.openAll();
+    this.testingPanelOpenState = !this.testingPanelOpenState;
+  }
+
+  toggleMythAccordion(): void {
+    this.mythPanelOpenState ? this.mythAccordion.closeAll() : this.mythAccordion.openAll();
+    this.mythPanelOpenState = !this.mythPanelOpenState;
   }
 
 }

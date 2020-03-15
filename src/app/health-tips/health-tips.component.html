@@ -1,6 +1,275 @@
 <div class="parent-container">
   <section class="mat-typography">
-    <h2>Health Tips</h2>
-    <img src="./assets/images/wip.png" alt="Work In Progress">
+    <h2>Health</h2>
+
+    <div class="testing-container">
+
+      <div class="title-container">
+        <span class="left-child sub-title">Diagnosis
+          <span class="xsmall-font">(source: <a href="https://www.mohfw.gov.in/"
+                                                target="_blank">Govt. of India</a>)</span>
+        </span>
+
+        <div class="right-child">
+          <button mat-button (click)="toggleTestingAccordion()"
+                  class="button-accordion">{{testingPanelOpenState ? 'Collapse' : 'Expand' }} All
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <mat-accordion multi #testingAccordion="matAccordion">
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                1. How can I get tested for COVID -19 ?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <span>
+              You are <span class="font-red-bold">not required to get tested</span> for COVID-19 if you <span
+              class="font-red-bold">do not have any symptoms</span>
+              (Cough, fever or difficulty in breathing)
+              <br/><br/>
+              If you have any of the above symptoms and have travelled to any of the COVID-19 affected countries including
+              Italy, Iran, Republic of Korea, France, Spain, Germany, UAE etc or you are a contact of a laboratory confirmed
+              positive case immediately call the State Helpline Number or <span class="red-font">24x7 helpline +91-11-23978046</span>
+              <br/><br/>
+              If you qualify as a case for testing, you will be tested at a Government approved lab only
+            </span>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                2. Can I get tested at a private hospital or laboratory for COVID-19 ?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <span> As of now, private hospital or laboratories are <span class="font-red-bold">not</span> authorized to test for COVID-19</span>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                3. Where can I find list of government approved laboratories ?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <span>
+            A copy of list can be found <a class="font-blue-bold" target="_blank"
+                                           href="https://icmr.nic.in/sites/default/files/upload_documents/Testing_sites_for_COVID19.pdf">here</a>.
+            <br/><br/>
+            For latest, check <a target="_blank" href="https://www.icmr.nic.in/">Indian Council of Medical Research</a>.
+          </span>
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </div>
+    </div>
+
+    <div class="myth-container">
+      <div class="title-container">
+        <span class="left-child sub-title">Myth Busters
+          <span class="xsmall-font">(source: <a
+            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+            target="_blank">WHO</a>)</span>
+        </span>
+        <div class="right-child">
+          <button mat-button (click)="toggleMythAccordion()"
+                  class="button-accordion">{{mythPanelOpenState ? 'Collapse' : 'Expand' }} All
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <mat-accordion multi #mythAccordion="matAccordion">
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                1. Does coronavirus affect older people, or are younger people also susceptible?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_old.png">
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                2. Can COVID-19 virus be transmitted in areas with hot and humid climates?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_transmit.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                3. Are there any specific medicines to prevent or treat the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_medicines.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                4. Are antibiotics effective in preventing and treating the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_anti.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                5. How effective are thermal scanners in detecting people infected with coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_ther.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                6. Can the new coronavirus be transmitted through mosquito bites. ?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_mosquito.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                7. Can cold weather and snow kill the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_snow.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                8. Can an ultraviolet disinfection lamp kill the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_uv.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                9. Can taking a hot bath prevent the new coronavirus disease?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_bath.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                10. Can eating garlic help prevent infection with the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_garlic.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                11. Can regularly rinsing your nose with saline help prevent infection with coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_nose.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                12. Do vaccines against pneumonia protect you against the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_pneu.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                13. Can spraying alcohol or chlorine all over your body kill the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_chlo.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                14. Are hand dryers effective in killing the new coronavirus?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <ng-template matExpansionPanelContent>
+              <mat-card class="mat-card-container">
+                <img mat-card-image src="./assets/images/myth_dry.png"/>
+              </mat-card>
+            </ng-template>
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </div>
+
+    </div>
+
+
   </section>
 </div>
