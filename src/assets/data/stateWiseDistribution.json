@@ -19,7 +19,7 @@
   },
   {
     "state": "Jammu & Kashmir (UT)",
-    "confirmed": 2,
+    "confirmed": 3,
     "cured": 0,
     "deaths": 0
   },
@@ -31,19 +31,25 @@
   },
   {
     "state": "Kerala",
-    "confirmed": 22,
+    "confirmed": 23,
     "cured": 3,
     "deaths": 0
   },
   {
     "state": "Ladakh (UT)",
-    "confirmed": 3,
+    "confirmed": 4,
     "cured": 0,
     "deaths": 0
   },
   {
     "state": "Maharashtra",
     "confirmed": 32,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Odisha",
+    "confirmed": 1,
     "cured": 0,
     "deaths": 0
   },
@@ -79,7 +85,7 @@
   },
   {
     "state": "Uttar Pradesh",
-    "confirmed": 14,
+    "confirmed": 13,
     "cured": 4,
     "deaths": 0
   }
