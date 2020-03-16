@@ -2,8 +2,11 @@
   padding: 15px 15px 15px 15px;
 }
 
-.dialogue-container {
-  padding-bottom: 20px;
+
+
+.monologue-container {
+  max-width: 800px;
+  font-size: medium;
 }
 
 .email-container {
@@ -21,4 +24,15 @@
 
 .sidenav-icon {
   padding-right: 15px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.name-container{
+  font-size: large;
+  font-weight: bold;
+  color: blue;
+
 }

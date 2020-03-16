@@ -3,90 +3,72 @@
 
     <!-- India Summary STARTS -->
     <div>
-      <h2>All India COVID-19 Cases</h2>
-
-      <!-- src: Media STARTS-->
-      <div style='display: inline-block;'>
-        <span class="small-font">source: <a href="https://www.thehindu.com/" target="_blank">The Hindu</a></span>
-        <app-summary-data-box dataSrc="summaryIndiaMedia" [showConfirmedData]=true [showCuredData]=false [showDeathData]=true></app-summary-data-box>
-      </div>
-      <!-- src: Media ENDS-->
-
-      <br />
+      <h2>All India COVID-19 Cases<span class="xsmall-font"> (src: <a href="https://www.mohfw.gov.in/" target="_blank">MoHFW</a>)</span></h2>
 
       <!-- src: GOI STARTS-->
       <div style='display: inline-block;'>
-        <span class="small-font">source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a></span>
-        <app-summary-data-box dataSrc="summaryIndiaGoi" [showConfirmedData]=true [showCuredData]=true [showDeathData]=true></app-summary-data-box>
+
+        <app-summary-data-box dataSrc="summaryIndiaGoi" [showConfirmedData]=true [showCuredData]=true
+                              [showDeathData]=true></app-summary-data-box>
       </div>
       <!-- src: GOI ENDS -->
-      <br />
-      <br />
+      <br/>
+      <br/>
     </div>
     <!-- India Summary ENDS -->
 
     <div>
-      <h2>State-wise Cases <span class="xsmall-font">(source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a>)</span></h2>
-      <mat-tab-group animationDuration="0ms" dynamicHeight="true">
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <span style="color: #605FF9; margin-right:2px">Tabular</span>
-            <mat-icon>table_chart</mat-icon>
-          </ng-template>
-            <!-- state wise break down STARTS -->
-            <div>
-              <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+      <h2>State-wise Cases</h2>
 
-                <!-- State name Column -->
-                <ng-container matColumnDef="state">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> State / UT</th>
-                  <td mat-cell *matCellDef="let element" class="left"> {{element.state}} </td>
-                </ng-container>
+      <!-- Interactive Map STARTS -->
+      <div class="map-container">
+        <iframe src='https://public.flourish.studio/visualisation/1579013/embed' frameborder='0' scrolling='no'
+                style='width:100%;height:600px;'></iframe>
+        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit'
+                                                                                         href='https://public.flourish.studio/visualisation/1579013/?utm_source=embed&utm_campaign=visualisation/1579013'
+                                                                                         target='_top'
+                                                                                         style='text-decoration:none!important'></a>
+        </div>
+      </div>
+      <!-- Interactive Map ENDS -->
 
-                <!-- Confirmed Column -->
-                <ng-container matColumnDef="confirmed">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Confirmed</th>
-                  <td mat-cell *matCellDef="let element" class="left"> {{element.confirmed | number: '1.0-0'}} </td>
-                </ng-container>
+      <br/><br/>
 
-                <!-- Cured Column -->
-                <ng-container matColumnDef="cured">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Cured</th>
-                  <td mat-cell *matCellDef="let element" class="left"> {{element.cured | number: '1.0-0'}} </td>
-                </ng-container>
+      <!-- state wise break down stats STARTS -->
+      <div>
+        <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
-                <!-- Deaths Column -->
-                <ng-container matColumnDef="deaths">
-                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths</th>
-                  <td mat-cell *matCellDef="let element" class="left"> {{element.deaths | number: '1.0-0'}} </td>
-                </ng-container>
-                <!-- state wise break down ENDS -->
+          <!-- State name Column -->
+          <ng-container matColumnDef="state">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> State / UT</th>
+            <td mat-cell *matCellDef="let element" class="left"> {{element.state}} </td>
+          </ng-container>
 
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-              </table>
-            </div>
-            <!-- state wise break down ENDS -->
-        </mat-tab>
+          <!-- Confirmed Column -->
+          <ng-container matColumnDef="confirmed">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Confirmed</th>
+            <td mat-cell *matCellDef="let element" class="left"> {{element.confirmed | number: '1.0-0'}} </td>
+          </ng-container>
 
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <span style="font-weight:bold; color:#F95079; margin-right:2px">Interactive Map</span>
-            <mat-icon>location_on</mat-icon>
-          </ng-template>
+          <!-- Cured Column -->
+          <ng-container matColumnDef="cured">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Cured</th>
+            <td mat-cell *matCellDef="let element" class="left"> {{element.cured | number: '1.0-0'}} </td>
+          </ng-container>
 
-          <ng-template matTabContent>
+          <!-- Deaths Column -->
+          <ng-container matColumnDef="deaths">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths</th>
+            <td mat-cell *matCellDef="let element" class="left"> {{element.deaths | number: '1.0-0'}} </td>
+          </ng-container>
+          <!-- state wise break down ENDS -->
 
-            <!-- Interactive Map STARTS -->
-            <div class="map-container">
-              <iframe src='https://public.flourish.studio/visualisation/1579013/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/1579013/?utm_source=embed&utm_campaign=visualisation/1579013' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
-              <span class="small-font">*J&K and Ladakh figures have been merged due to technical limitations</span>
-            </div>
-            <!-- Interactive Map ENDS -->
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+      <!-- state wise break down stats ENDS -->
 
-          </ng-template>
-        </mat-tab>
-      </mat-tab-group>
     </div>
 
   </section>
