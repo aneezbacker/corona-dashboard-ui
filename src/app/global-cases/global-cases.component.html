@@ -1,11 +1,17 @@
 <div class="parent-container">
   <section class="mat-typography">
     <div>
-      <h2>Global Cases Stats <span class="xsmall-font">(source: <a href="https://www.worldometers.info/coronavirus/" target="_blank">worldometer</a>)</span></h2>
+      <span class="font-h2">Global Cases Stats
+        <span class="src-data">(source: <a
+          href="https://www.worldometers.info/coronavirus/" target="_blank">worldometer</a>)
+        </span>
+      </span>
+      <mat-divider></mat-divider>
 
       <!-- Global Summary STARTS -->
       <div style='display: inline-block;'>
-        <app-summary-data-box dataSrc="summaryGlobal" [showConfirmedData]=true [showCuredData]=true [showDeathData]=true></app-summary-data-box>
+        <app-summary-data-box dataSrc="summaryGlobal" [showConfirmedData]=true [showCuredData]=true
+                              [showDeathData]=true></app-summary-data-box>
       </div>
       <!-- Global Summary ENDS -->
 

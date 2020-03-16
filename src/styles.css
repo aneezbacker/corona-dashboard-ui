@@ -1,4 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+* {
+  font-family: "Poppins, sans-serif";
+}
+
+mat-divider {
+  padding: 12px 2px 12px 2px;
+}
+
+.src-data {
+  font-size: x-small;
+  color: darkgray;
+}
+
+.color-deaths {
+  color: #F90404;
+}
+
+
+.color-cured {
+  color: #01CA0F;
+}
+
+
+.color-confirmed {
+  color: #012ECA;
+}
+
+.gray {
+  color: gray;
+}
+
+.black {
+  color: black;
+}
+
+.green {
+  color: #05DA3E;
+}
+
+.orange{
+  color: #FCDE1B;
+}
+
+.light-blue{
+  color: #89FCF0;
+}
+
+.font-h2 {
+  font-family: "Poppins, sans-serif";
+  font-size: 20px;
+}
+
+.font-small {
+  font-size: small;
+}
+
+.font-xlarge {
+  font-size: x-large;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.table-header {
+  font-weight: bold;
+  font-size: medium;
+  color: black;
+}
+
+.expansion-panel-content {
+  background-color: #F3FDFF;
+}

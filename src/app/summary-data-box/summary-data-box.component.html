@@ -1,24 +1,29 @@
 <div *ngIf="summaryData" class="summary-data-container">
-  <mat-card class="summary-data-card blue" *ngIf="showConfirmedData">
+
+  <mat-card class="summary-data-card" *ngIf="showDeathData">
     <mat-card-content>
-      <mat-card-subtitle>Confirmed</mat-card-subtitle>
-      <mat-card-title class="small-font">{{summaryData.confirmed | number: '1.0-0'}}</mat-card-title>
+      <mat-card-subtitle><span class="case-type">Deaths</span></mat-card-subtitle>
+      <mat-card-title>
+        <span class="color-deaths font-xlarge">{{summaryData.deaths | number: '1.0-0'}}</span></mat-card-title>
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="summary-data-card red" *ngIf="showDeathData">
+  <mat-card class="summary-data-card" *ngIf="showCuredData">
     <mat-card-content>
-      <mat-card-subtitle>Deaths</mat-card-subtitle>
-      <mat-card-title class="small-font">{{summaryData.deaths | number: '1.0-0'}}</mat-card-title>
+      <mat-card-subtitle><span class="case-type">Cured</span></mat-card-subtitle>
+      <mat-card-title>
+        <span class="color-cured font-xlarge">{{summaryData.cured | number: '1.0-0'}}</span></mat-card-title>
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="summary-data-card green" *ngIf="showCuredData">
+  <mat-card class="summary-data-card" *ngIf="showConfirmedData">
     <mat-card-content>
-      <mat-card-subtitle>Cured</mat-card-subtitle>
-      <mat-card-title class="small-font">{{summaryData.cured | number: '1.0-0'}}</mat-card-title>
+      <mat-card-subtitle><span class="case-type">Confirmed</span></mat-card-subtitle>
+      <mat-card-title>
+        <span class="color-confirmed font-xlarge">{{summaryData.confirmed | number: '1.0-0'}}</span></mat-card-title>
     </mat-card-content>
   </mat-card>
+
 
 </div>
 

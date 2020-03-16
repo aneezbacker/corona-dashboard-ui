@@ -18,7 +18,7 @@ export interface StateWiseDistribution {
 })
 export class HomePageComponent implements OnInit {
 
-  displayedColumns = ['state', 'confirmed', 'cured', 'deaths'];
+  displayedColumns = ['state', 'deaths', 'cured', 'confirmed'];
   dataSource: any;
 
   @ViewChild(MatSort, {static: true})

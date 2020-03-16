@@ -4,26 +4,16 @@
 
 .summary-data-card {
   max-height: 40px;
-  margin-bottom: 20px;
   float: left;
 }
 
-.small-font{
-  font-size: small;
-}
 
-.blue {
-  background-color: #F7F6FF;
-}
-
-.green {
-  background-color: #F5FFF6;
-}
-
-.red {
-  background-color: #FFF1EC;
-}
 
 .card {
   background-color: #FFF1EC;
+}
+
+.case-type {
+  font-size: small;
+  color: black;
 }

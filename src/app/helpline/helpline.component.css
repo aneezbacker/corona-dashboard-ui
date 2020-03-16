@@ -31,6 +31,9 @@
 
 .card-subtitle-data {
   padding-left: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: black;
 }
 
 .small-font{

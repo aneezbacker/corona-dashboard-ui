@@ -4,15 +4,17 @@
     <!-- All India helpline STARTS -->
     <mat-card class="summary-data-card">
       <mat-card-header>
-        <mat-card-title>All India Helpline <span class="small-font">(source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of India</a>)</span></mat-card-title>
+        <mat-card-title>All India Helpline <span class="src-data">(source: <a href="https://www.mohfw.gov.in/"
+                                                                              target="_blank">Govt. of India</a>)</span>
+        </mat-card-title>
 
         <mat-card-subtitle>
-          <mat-icon aria-hidden="false" aria-label="phone" class="sidenav-icon">phone</mat-icon>
+          <mat-icon aria-hidden="false" aria-label="phone" color="primary">phone</mat-icon>
           <span class="card-subtitle-data">+91-11-23978046</span>
         </mat-card-subtitle>
 
         <mat-card-subtitle>
-          <mat-icon aria-hidden="false" aria-label="email" class="sidenav-icon">email</mat-icon>
+          <mat-icon aria-hidden="false" aria-label="email" color="warn">email</mat-icon>
           <span class="card-subtitle-data">
             <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
             <span *ngIf="showEmail">{{email}}</span>
@@ -24,21 +26,23 @@
     <!-- All India helpline ENDS -->
   </div>
 
+  <br/>
 
   <!-- Statewise helpline STARTS -->
   <div class="state-wise-helpline-container">
-    <h2>State/UT Helpline Numbers</h2>
+    <span class="font-h2">State / UT Helpline Numbers</span>
+    <mat-divider></mat-divider>
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
       <!-- State name column -->
       <ng-container matColumnDef="state">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> State / UT</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header"> State / UT</span></th>
         <td mat-cell *matCellDef="let element" class="left"> {{element.state}} </td>
       </ng-container>
 
       <!-- helpline number column -->
       <ng-container matColumnDef="helplineNo">
-        <th mat-header-cell *matHeaderCellDef>Helpline Number</th>
+        <th mat-header-cell *matHeaderCellDef><span class="table-header">Helpline Number</span></th>
         <td mat-cell *matCellDef="let element" class="left"> {{element.helplineNo}} </td>
       </ng-container>
 
