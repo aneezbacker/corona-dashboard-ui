@@ -25,13 +25,13 @@
   },
   {
     "state": "Karnataka",
-    "confirmed": 6,
+    "confirmed": 8,
     "cured": 0,
     "deaths": 1
   },
   {
     "state": "Kerala",
-    "confirmed": 23,
+    "confirmed": 24,
     "cured": 3,
     "deaths": 0
   },
@@ -43,7 +43,7 @@
   },
   {
     "state": "Maharashtra",
-    "confirmed": 32,
+    "confirmed": 39,
     "cured": 0,
     "deaths": 0
   },
@@ -73,7 +73,7 @@
   },
   {
     "state": "Telengana",
-    "confirmed": 3,
+    "confirmed": 4,
     "cured": 1,
     "deaths": 0
   },
