@@ -36,12 +36,16 @@ mat-divider {
   color: #012ECA;
 }
 
-.gray {
-  color: gray;
-}
-
 .black {
   color: black;
+}
+
+.blue-light{
+  color: #89FCF0;
+}
+
+.gray {
+  color: gray;
 }
 
 .green {
@@ -50,10 +54,6 @@ mat-divider {
 
 .orange{
   color: #FCDE1B;
-}
-
-.light-blue{
-  color: #89FCF0;
 }
 
 .font-h2 {

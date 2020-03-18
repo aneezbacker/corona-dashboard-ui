@@ -19,9 +19,9 @@
         </mat-card-subtitle>
 
         <mat-card-subtitle>
-          <mat-icon aria-hidden="false" aria-label="email" color="warn">email</mat-icon>
+          <mat-icon aria-hidden="false" aria-label="email" class="orange">email</mat-icon>
           <span class="card-subtitle-data">
-            <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
+            <button mat-button *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
             <span *ngIf="showEmail">{{email}}</span>
           </span>
         </mat-card-subtitle>
