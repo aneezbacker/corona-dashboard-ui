@@ -1,43 +1,58 @@
 <div class="parent-container">
   <section class="mat-typography">
     <div class="monologue-container">
-      I live in Hong Kong and have closely witnessed the sudden dawn of COVID-19 disease (earlier known as novel Corona
-      Virus)
-      in this beautiful city.
-      I also stand testimony to how Hongkongers have managed to keep infection rates low by practicing good hygiene and
-      keeping themselves aware as this situation progresses.
-      <br/><br/>
-      The first case of COVID-19 in India was confirmed on 30 January 2020.
-      Given the disease becoming increasingly threatening, I decided to develop this portal so that people can get the
-      latest information on the situation in India.
-      <br/><br/>
-      Apart from sharing the trait of bad hand-writing, I am no medical expert myself. The information you see on this
-      website
-      is sourced strictly from Government and other verified agencies.
-      <br/><br/>
-      I wrote the code for coronainfo.in over a weekend. I have a regular day-job and manage to add new features to this
-      website in the evenings (including this lengthy essay).
-      Thankfully, I wouldn't have to sacrifice a lot many evenings as I am hopeful the situation will get better world
-      over in the coming weeks as people become more aware and exercise precautions.
-      Also, I am very optimistic about the medical community developing a vaccine or drug or both very soon.
-      <br/><br/>
-      This website is powered by open source technologies (see below) and numerous cups of Indian and Turkish tea.
-      I do not intend to put any advertisements on this portal. Nor do I seek donations.
-      <br/><br/>
-      If you wish to cite anything from this site, please indicate "coronainfo.in".
-      <br/><br/>
-      If you have any concerns kindly email me here:
-      <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
-      <span *ngIf="showEmail">{{email}}</span>
-      <br/><br/>
 
-      Wishing you and your dear ones good health. Stay safe and wash your hands often !
+      <mat-accordion multi #toolsAccordion="matAccordion">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="mat-panel-title">
+              <span class="title">About Me</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div>
+
+            <span>
+              I live in Hong Kong and have closely witnessed the sudden dawn of COVID-19 disease (earlier known as novel Corona
+              Virus)
+              in this beautiful city.
+              I also stand testimony to how Hongkongers have managed to keep infection rates low by practicing good hygiene and
+              keeping themselves aware as this situation progresses.
+              <br/><br/>
+              The first case of COVID-19 in India was confirmed on 30 January 2020.
+              Given the disease becoming increasingly threatening, I decided to develop this portal so that people can get the
+              latest information on the situation in India.
+              <br/><br/>
+              Apart from sharing the trait of bad hand-writing, I am no medical expert myself. The information you see on this
+              website
+              is sourced strictly from Government and other verified agencies.
+              <br/><br/>
+              I wrote the code for coronainfo.in over a weekend. I have a regular day-job and manage to add new features to this
+              website in the evenings (including this lengthy essay).
+              Thankfully, I wouldn't have to sacrifice a lot many evenings as I am hopeful the situation will get better world
+              over in the coming weeks as people become more aware and exercise precautions.
+              Also, I am very optimistic about the medical community developing a vaccine or drug or both very soon.
+              <br/><br/>
+              This website is powered by open source technologies (see below) and numerous cups of Indian and Turkish tea.
+              I do not intend to put any advertisements on this portal. Nor do I seek donations.
+              <br/><br/>
+              If you wish to cite anything from this site, please indicate "coronainfo.in".
+              <br/><br/>
+              If you have any concerns kindly email me here:
+              <button mat-button color="primary" *ngIf="showRevealButton" (click)="onRevealBtnClick()">Show</button>
+              <span *ngIf="showEmail">{{email}}</span>
+              <br/><br/>
+
+              Wishing you and your dear ones good health. Stay safe and wash your hands often !
+            </span>
+
+            <br/><br/>
+            <span class="name-container">~ aB</span>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
 
       <br/><br/>
-      <span class="name-container">~ aneez</span>
-      <br/><br/>
-      <mat-accordion multi #testingAccordion="matAccordion">
-
+      <mat-accordion multi #toolsAccordion="matAccordion">
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title class="mat-panel-title">
@@ -45,29 +60,26 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
           <span>
-            <a target="_blank" href="https://angular.io/">Angular</a>
-            <br/>
-            <a target="_blank" href="https://material.angular.io/">Angular Material</a>
-            <br/>
-            <a target="_blank" href="https://cloud.google.com/">Google Cloud Platform - AppEngine | Storage</a>
-            <br/>
-            <a target="_blank" href="https://bitbucket.org/">BitBucket</a>
-            <br/>
-            <a target="_blank" href="https://www.sourcetreeapp.com/">SourceTree</a>
-            <br/>
-            <a target="_blank" href="https://www.cloudflare.com/">CloudFare</a>
-            <br/>
-            <a target="_blank" href="https://flourish.studio/">Flourish</a>
-            <br/>
-            and numerous developer and humour forums.
-          </span>
+        <a target="_blank" href="https://angular.io/">Angular</a>
+        <br/>
+        <a target="_blank" href="https://material.angular.io/">Angular Material</a>
+        <br/>
+        <a target="_blank" href="https://cloud.google.com/">Google Cloud Platform - AppEngine | Storage</a>
+        <br/>
+        <a target="_blank" href="https://bitbucket.org/">BitBucket</a>
+        <br/>
+        <a target="_blank" href="https://www.sourcetreeapp.com/">SourceTree</a>
+        <br/>
+        <a target="_blank" href="https://www.cloudflare.com/">CloudFare</a>
+        <br/>
+        <a target="_blank" href="https://flourish.studio/">Flourish</a>
+        <br/>
+        and numerous developer and humour forums.
+      </span>
         </mat-expansion-panel>
 
       </mat-accordion>
 
-
     </div>
-
-
   </section>
 </div>

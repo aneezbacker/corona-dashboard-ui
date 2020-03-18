@@ -36,6 +36,12 @@
   color: black;
 }
 
+.toll-free {
+  font-weight: normal;
+  color: gray;
+}
+
+
 .small-font{
   font-size: x-small;
 }
