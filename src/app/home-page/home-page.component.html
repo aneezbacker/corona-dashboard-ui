@@ -1,19 +1,34 @@
 <div class="parent-container">
 
+  <!-- Global Summary STARTS -->
+  <div>
+      <span class="font-h2">Global Cases
+        <span class="src-data">(source: <a
+          href="https://www.worldometers.info/coronavirus/" target="_blank">worldometer</a>)
+        </span>
+      </span>
+    <mat-divider></mat-divider>
+
+    <div style='display: inline-block;'>
+      <app-summary-data-box dataSrc="globalCasesSummary"></app-summary-data-box>
+    </div>
+
+  </div>
+  <!-- Global Summary ENDS -->
+
+  <br /><br />
+
   <!-- India Summary STARTS -->
   <div>
-    <span class="font-h2">All India COVID-19 Cases
-      <span class="src-data"> (src: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of india</a>)</span>
+    <span class="font-h2">India Cases
+      <span class="src-data"> (source: <a href="https://www.mohfw.gov.in/" target="_blank">Govt. of india</a>)</span>
     </span>
     <mat-divider></mat-divider>
 
-    <!-- src: GOI STARTS-->
     <div style='display: inline-block;'>
 
-      <app-summary-data-box dataSrc="summaryIndiaGoi" [showConfirmedData]=true [showCuredData]=true
-                            [showDeathData]=true></app-summary-data-box>
+      <app-summary-data-box dataSrc="indiaCasesSummary"></app-summary-data-box>
     </div>
-    <!-- src: GOI ENDS -->
   </div>
   <!-- India Summary ENDS -->
 

@@ -14,7 +14,7 @@ body {
 }
 
 mat-divider {
-  padding: 12px 2px 12px 2px;
+  padding: 12px 4px 12px 2px;
 }
 
 .src-data {
@@ -23,14 +23,17 @@ mat-divider {
 }
 
 .color-deaths {
-  color: #F90404;
+  color: #CA0529;
 }
 
 
 .color-cured {
-  color: #01CA0F;
+  color: #167A02;
 }
 
+.color-active {
+  color: #B105B3;
+}
 
 .color-confirmed {
   color: #012ECA;
@@ -49,11 +52,19 @@ mat-divider {
 }
 
 .green {
-  color: #05DA3E;
+  color: #0C8002;
+}
+
+.green-bright {
+  color: #1AF507;
 }
 
 .orange{
   color: #FCDE1B;
+}
+
+.red-bright {
+  color: #F94507;
 }
 
 .font-h2 {
@@ -61,8 +72,20 @@ mat-divider {
   font-size: 20px;
 }
 
+.font-size-20 {
+  font-size: 20px;
+}
+
 .font-small {
   font-size: small;
+}
+
+.font-medium {
+  font-size: medium;
+}
+
+.font-large {
+  font-size: x-large;
 }
 
 .font-xlarge {

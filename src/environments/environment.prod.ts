@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  cdnUrl: 'https://storage.googleapis.com/corona-dashboard-files-bucket'
 };

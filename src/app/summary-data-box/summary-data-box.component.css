@@ -1,19 +1,35 @@
 .summary-data-container {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .summary-data-card {
-  max-height: 40px;
+  max-height: 70px;
   float: left;
 }
 
-
+.confirmed-card{
+  margin-left: 10px;
+}
 
 .card {
   background-color: #FFF1EC;
 }
 
-.case-type {
+.delta-green {
   font-size: small;
-  color: black;
+  color: green;
 }
+
+.delta-red {
+  font-size: small;
+  color: #F79E0D;
+}
+
+.delta-value {
+  font-size: small;
+  display: flex;
+  justify-content: space-around;
+}
+

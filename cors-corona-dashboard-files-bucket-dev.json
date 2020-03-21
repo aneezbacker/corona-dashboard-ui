@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["http://coronainfo.in", "https://coronainfo.in", "http://www.coronainfo.in", "https://www.coronainfo.in", "http://localhost:4200", "https://localhost:4200"],
+      "responseHeader": ["Content-Type"],
+      "method": ["GET", "HEAD", "DELETE"],
+      "maxAgeSeconds": 3600
+    }
+]

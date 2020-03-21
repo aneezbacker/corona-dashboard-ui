@@ -7,12 +7,12 @@
     <div class="testing-container">
 
       <div class="title-container">
-        <span class="left-child sub-title">Diagnosis
+        <span class="sub-title">Diagnosis
           <span class="xsmall-font">(source: <a href="https://www.mohfw.gov.in/"
                                                 target="_blank">Govt. of India</a>)</span>
         </span>
 
-        <div class="right-child">
+        <div>
           <button mat-button (click)="toggleTestingAccordion()"
                   class="button-accordion">{{testingPanelOpenState ? 'Collapse' : 'Expand' }} All
           </button>
@@ -76,12 +76,12 @@
 
     <div class="myth-container">
       <div class="title-container">
-        <span class="left-child sub-title">Myth Busters
+        <span class="sub-title">Myth Busters
           <span class="xsmall-font">(source: <a
             href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
             target="_blank">WHO</a>)</span>
         </span>
-        <div class="right-child">
+        <div>
           <button mat-button (click)="toggleMythAccordion()"
                   class="button-accordion">{{mythPanelOpenState ? 'Collapse' : 'Expand' }} All
           </button>

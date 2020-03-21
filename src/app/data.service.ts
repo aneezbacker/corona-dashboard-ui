@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {environment} from './../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +14,6 @@ export class DataService {
 
   public getSummary(dataSource): Observable<any> {
     const randomNo = new Date().getTime();  // random id to append to request to prevent caching
-    return this.http.get('https://storage.googleapis.com/corona-dashboard-bucket/data/' + dataSource + '.json?reqId=' + randomNo);
+    return this.http.get(environment.cdnUrl + '/summaryData/' + dataSource + '.json?reqId=' + randomNo);
   }
 }
