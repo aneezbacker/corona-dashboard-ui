@@ -14,8 +14,9 @@
   z-index: 2;
 }
 
-h1.page-header {
-  margin-left: 8px;
+.page-header {
+  padding-left: 40px;
+  padding-right: 30px;
 }
 
 .example-sidenav-container {
@@ -36,4 +37,13 @@ h1.page-header {
 
 .hide-text {
   color: transparent;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-container{
+  padding-top: 5px;
 }

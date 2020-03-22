@@ -1,10 +1,22 @@
 <div class="example-container" [class.example-is-mobile]="mediaQueryList.matches">
 
   <mat-toolbar color="primary" class="example-toolbar">
-    <button mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <h1 class="page-header">COVID -19 (Corona Virus) Tracker</h1>
+
+
+    <div class="header-container">
+      <div>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+
+      <div class="font-h2 page-header"><span>COVID -19 Tracker</span></div>
+
+      <div class="share-container">
+        <mat-icon color="white" mat-icon-button (click)="share()">share</mat-icon>
+      </div>
+    </div>
+
   </mat-toolbar>
 
   <mat-sidenav-container class="example-sidenav-container"

@@ -67,6 +67,11 @@ mat-divider {
   color: #F94507;
 }
 
+.white {
+  color: #FFFFFF;
+}
+
+
 .font-h2 {
   font-family: "Poppins, sans-serif";
   font-size: 20px;
