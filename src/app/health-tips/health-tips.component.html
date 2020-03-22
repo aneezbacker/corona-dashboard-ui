@@ -8,7 +8,7 @@
 
       <div class="title-container">
         <span class="sub-title">Diagnosis
-          <span class="xsmall-font">(source: <a href="https://www.mohfw.gov.in/"
+          <span class="xsmall-font">(source: <a class="no-underline" href="https://www.mohfw.gov.in/"
                                                 target="_blank">Govt. of India</a>)</span>
         </span>
 
@@ -37,7 +37,7 @@
               Italy, Iran, Republic of Korea, France, Spain, Germany, UAE etc or you are a contact of a laboratory confirmed
               positive case immediately call the State Helpline Number or <span class="red-font">24x7 helpline +91-11-23978046</span>
               <br/><br/>
-              If you qualify as a case for testing, you will be tested at a Government approved lab only
+              If you qualify as a case for testing, you will be tested at a Government approved public/private lab only
             </span>
           </mat-expansion-panel>
 
@@ -46,10 +46,14 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title class="mat-panel-title">
-                2. Can I get tested at a private hospital or laboratory for COVID-19 ?
+                2. Can I get tested at a home for COVID-19 ?
               </mat-panel-title>
             </mat-expansion-panel-header>
-            <span> As of now, private hospital or laboratories are <span class="font-red-bold">not</span> authorized to test for COVID-19</span>
+            <span>
+              <p class="green"> Yes.</p>
+              The government encourages home collection of samples as this will avoid the contact of people
+              with the suspect case during local travel to reach the laboratory
+            </span>
           </mat-expansion-panel>
 
           <br/>
@@ -57,7 +61,22 @@
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title class="mat-panel-title">
-                3. Where can I find list of government approved laboratories ?
+                3. What is the cost for COVID-19 tests ?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <span>
+              <p class="green"> Yes.</p>
+              Maximum cost of testing sample should not exceed Rs 4,500. This may include Rs 1,500 as a screening test
+              for suspect cases, and an additional Rs 3,000 for confirmation test.
+            </span>
+          </mat-expansion-panel>
+
+          <br/>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                3. Where can I find list of government laboratories ?
               </mat-panel-title>
             </mat-expansion-panel-header>
             <span>
@@ -77,9 +96,9 @@
     <div class="myth-container">
       <div class="title-container">
         <span class="sub-title">Myth Busters
-          <span class="xsmall-font">(source: <a
-            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
-            target="_blank">WHO</a>)</span>
+          <span class="xsmall-font">(source: <a class="no-underline"
+                                                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"
+                                                target="_blank">WHO</a>)</span>
         </span>
         <div>
           <button mat-button (click)="toggleMythAccordion()"

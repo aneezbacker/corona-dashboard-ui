@@ -43,7 +43,7 @@ mat-divider {
   color: black;
 }
 
-.blue-light{
+.blue-light {
   color: #89FCF0;
 }
 
@@ -59,7 +59,7 @@ mat-divider {
   color: #1AF507;
 }
 
-.orange{
+.orange {
   color: #FCDE1B;
 }
 
@@ -112,4 +112,8 @@ mat-divider {
 
 .expansion-panel-content {
   background-color: #F3FDFF;
+}
+
+.no-underline {
+  text-decoration: none;
 }

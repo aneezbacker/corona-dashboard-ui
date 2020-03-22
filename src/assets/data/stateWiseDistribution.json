@@ -7,7 +7,7 @@
   },
   {
     "state": "Chandigarh (UT)",
-    "confirmed": 1,
+    "confirmed": 5,
     "cured": 0,
     "deaths": 0
   },
@@ -19,7 +19,7 @@
   },
   {
     "state": "Delhi (UT)",
-    "confirmed": 26,
+    "confirmed": 27,
     "cured": 5,
     "deaths": 1
   },
@@ -49,13 +49,13 @@
   },
   {
     "state": "Karnataka",
-    "confirmed": 15,
-    "cured": 1,
+    "confirmed": 20,
+    "cured": 2,
     "deaths": 1
   },
   {
     "state": "Kerala",
-    "confirmed": 39,
+    "confirmed": 52,
     "cured": 3,
     "deaths": 0
   },
@@ -75,7 +75,7 @@
     "state": "Maharashtra",
     "confirmed": 63,
     "cured": 0,
-    "deaths": 1
+    "deaths": 2
   },
   {
     "state": "Odisha",
@@ -97,13 +97,13 @@
   },
   {
     "state": "Rajasthan",
-    "confirmed": 17,
+    "confirmed": 24,
     "cured": 3,
     "deaths": 0
   },
   {
     "state": "Tamil Nadu",
-    "confirmed": 3,
+    "confirmed": 6,
     "cured": 1,
     "deaths": 0
   },
@@ -121,13 +121,13 @@
   },
   {
     "state": "Uttar Pradesh",
-    "confirmed": 24,
+    "confirmed": 25,
     "cured": 9,
     "deaths": 0
   },
   {
     "state": "West Bengal",
-    "confirmed": 3,
+    "confirmed": 4,
     "cured": 0,
     "deaths": 0
   }

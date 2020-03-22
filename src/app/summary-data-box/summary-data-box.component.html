@@ -4,7 +4,7 @@
     <mat-card-content>
       <mat-card-subtitle><span class="case-type">Deaths</span></mat-card-subtitle>
       <mat-card-title>
-        <span class="color-deaths font-size-20">{{summaryData.deaths | number: '1.0-0'}}</span>
+        <span class="font-size-20">{{summaryData.deaths | number: '1.0-0'}}</span>
       </mat-card-title>
       <mat-card-subtitle>
         <span class="delta-value">
@@ -12,7 +12,7 @@
             <span *ngIf="summaryData.deathsDelta > 0"><mat-icon class="red-bright">arrow_drop_up</mat-icon></span>
             <span *ngIf="summaryData.deathsDelta < 1" class="green-bright">-</span>
           </span>
-          <span *ngIf="summaryData.curedDelta != 0">{{summaryData.deathsDelta | number: '1.0-0'}}</span>
+          <span *ngIf="summaryData.deathsDelta != 0">{{summaryData.deathsDelta | number: '1.0-0'}}</span>
         </span>
       </mat-card-subtitle>
     </mat-card-content>
@@ -22,7 +22,7 @@
     <mat-card-content>
       <mat-card-subtitle><span class="case-type">Cured</span></mat-card-subtitle>
       <mat-card-title>
-        <span class="color-cured font-size-20">{{summaryData.cured | number: '1.0-0'}}</span>
+        <span class="font-size-20">{{summaryData.cured | number: '1.0-0'}}</span>
       </mat-card-title>
       <mat-card-subtitle>
         <span class="delta-value">
@@ -40,16 +40,16 @@
     <mat-card-content>
       <mat-card-subtitle><span class="case-type">Sick</span></mat-card-subtitle>
       <mat-card-title>
-        <span class="color-active font-size-20">{{summaryData.active | number: '1.0-0'}}</span>
+        <span class="font-size-20">{{summaryData.active | number: '1.0-0'}}</span>
       </mat-card-title>
       <mat-card-subtitle>
         <span class="delta-value">
         <span>
-          <span *ngIf="summaryData.deathsDelta > 0"><mat-icon class="red-bright">arrow_drop_up</mat-icon></span>
-            <span *ngIf="summaryData.deathsDelta < 0"><mat-icon class="green-bright">arrow_drop_down</mat-icon></span>
-            <span *ngIf="summaryData.deathsDelta == 0" class="green-bright">-</span>
+          <span *ngIf="summaryData.activeDelta > 0"><mat-icon class="red-bright">arrow_drop_up</mat-icon></span>
+            <span *ngIf="summaryData.activeDelta < 0"><mat-icon class="green-bright">arrow_drop_down</mat-icon></span>
+            <span *ngIf="summaryData.activeDelta == 0" class="green-bright">-</span>
           </span>
-          <span *ngIf="summaryData.curedDelta != 0">{{summaryData.activeDelta | number: '1.0-0'}}</span>
+          <span *ngIf="summaryData.activeDelta != 0">{{summaryData.activeDelta | number: '1.0-0'}}</span>
         </span>
       </mat-card-subtitle>
     </mat-card-content>
@@ -67,7 +67,7 @@
             <span *ngIf="summaryData.confirmedDelta > 0"><mat-icon class="red-bright">arrow_drop_up</mat-icon></span>
             <span *ngIf="summaryData.confirmedDelta < 1" class="green-bright">-</span>
           </span>
-          <span *ngIf="summaryData.curedDelta != 0">{{summaryData.confirmedDelta | number: '1.0-0'}}</span>
+          <span *ngIf="summaryData.confirmedDelta != 0">{{summaryData.confirmedDelta | number: '1.0-0'}}</span>
         </span>
       </mat-card-subtitle>
     </mat-card-content>
