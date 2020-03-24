@@ -1,7 +1,7 @@
 [
   {
     "state": "Andhra Pradesh",
-    "confirmed": 7,
+    "confirmed": 8,
     "cured": 0,
     "deaths": 0
   },
@@ -19,7 +19,7 @@
   },
   {
     "state": "Bihar",
-    "confirmed": 2,
+    "confirmed": 3,
     "cured": 0,
     "deaths": 1
   },
@@ -37,13 +37,13 @@
   },
   {
     "state": "Gujarat",
-    "confirmed": 29,
+    "confirmed": 33,
     "cured": 0,
     "deaths": 1
   },
   {
     "state": "Haryana",
-    "confirmed": 26,
+    "confirmed": 28,
     "cured": 11,
     "deaths": 0
   },
@@ -62,7 +62,7 @@
   {
     "state": "Karnataka",
     "confirmed": 37,
-    "cured": 2,
+    "cured": 3,
     "deaths": 1
   },
   {
@@ -79,13 +79,13 @@
   },
   {
     "state": "Maharashtra",
-    "confirmed": 87,
+    "confirmed": 89,
     "cured": 0,
     "deaths": 2
   },
   {
     "state": "Manipur",
-    "confirmed": 0,
+    "confirmed": 1,
     "cured": 0,
     "deaths": 0
   },
@@ -115,13 +115,13 @@
   },
   {
     "state": "Punjab",
-    "confirmed": 21,
+    "confirmed": 29,
     "cured": 0,
     "deaths": 1
   },
   {
     "state": "Rajasthan",
-    "confirmed": 33,
+    "confirmed": 32,
     "cured": 3,
     "deaths": 0
   },
@@ -133,13 +133,13 @@
   },
   {
     "state": "Tamil Nadu",
-    "confirmed": 12,
+    "confirmed": 15,
     "cured": 1,
     "deaths": 0
   },
   {
     "state": "Telengana",
-    "confirmed": 32,
+    "confirmed": 35,
     "cured": 1,
     "deaths": 0
   },
@@ -152,18 +152,18 @@
   {
     "state": "Uttar Pradesh",
     "confirmed": 33,
-    "cured": 9,
+    "cured": 11,
     "deaths": 0
   },
   {
     "state": "Uttarakhand",
-    "confirmed": 3,
+    "confirmed": 4,
     "cured": 0,
     "deaths": 0
   },
   {
     "state": "West Bengal",
-    "confirmed": 7,
+    "confirmed": 9,
     "cured": 0,
     "deaths": 1
   },
@@ -175,7 +175,7 @@
   },
   {
     "state": "Chandigarh (UT)",
-    "confirmed": 6,
+    "confirmed": 7,
     "cured": 0,
     "deaths": 0
   },
@@ -187,7 +187,7 @@
   },
   {
     "state": "Delhi (UT)",
-    "confirmed": 31,
+    "confirmed": 30,
     "cured": 6,
     "deaths": 1
   },
