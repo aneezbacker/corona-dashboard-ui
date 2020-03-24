@@ -77,15 +77,10 @@
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.deathsTotalDelta > 0">
-                  <mat-icon class="red-bright">arrow_drop_up</mat-icon>
+                <span *ngIf="element.deathsTotalDelta > 0" class="red-bright">
+                  +{{element.deathsTotalDelta | number: '1.0-0'}}
                 </span>
                 <span *ngIf="element.deathsTotalDelta < 1" class="green-bright">-</span>
-              </span>
-
-              <span class="gray"
-                    *ngIf="element.deathsTotalDelta != 0">
-                {{element.deathsTotalDelta | number: '1.0-0'}}
               </span>
             </span>
             <!-- delta value ENDS -->
@@ -108,13 +103,10 @@
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.curedTotalDelta > 0">
-                  <mat-icon class="green-bright">arrow_drop_up</mat-icon>
+                <span *ngIf="element.curedTotalDelta > 0" class="green-bright">
+                  +{{element.curedTotalDelta | number: '1.0-0'}}
                 </span>
                 <span *ngIf="element.curedTotalDelta < 1" class="green-bright">-</span>
-              </span>
-              <span class="gray" *ngIf="element.curedTotalDelta != 0">
-                {{element.curedTotalDelta | number: '1.0-0'}}
               </span>
             </span>
             <!-- delta value ENDS -->
@@ -137,19 +129,14 @@
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.activeTotalDelta > 0">
-                  <mat-icon class="red-bright">arrow_drop_up</mat-icon>
+                <span *ngIf="element.activeTotalDelta > 0" class="red-bright">
+                  +{{utilService.abs(element.activeTotalDelta) | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.activeTotalDelta < 0">
-                  <mat-icon class="green-bright">arrow_drop_down</mat-icon>
+                <span *ngIf="element.activeTotalDelta < 0" class="green-bright">
+                  -{{utilService.abs(element.activeTotalDelta) | number: '1.0-0'}}
                 </span>
                 <span *ngIf="element.activeTotalDelta == 0" class="green-bright">-</span>
               </span>
-
-              <span class="gray" *ngIf="element.activeTotalDelta != 0">
-                {{element.activeTotalDelta | number: '1.0-0'}}
-              </span>
-
             </span>
             <!-- delta value ENDS -->
 
@@ -158,32 +145,26 @@
         </ng-container>
         <!-- Sick Column ENDS -->
 
-
         <!-- Confirmed Column STARTS -->
         <ng-container matColumnDef="confirmedTotal">
           <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header"> Confirmed</span></th>
           <td mat-cell *matCellDef="let element" class="text-align-center">
             <span
-              [ngClass]="{'font-bold': element.confirmedTotal > 0, 'gray': element.confirmedTotal == 0}">
+              [ngClass]="{'font-bold color-confirmed': element.confirmedTotal > 0, 'gray': element.confirmedTotal == 0}">
               {{element.confirmedTotal | number: '1.0-0'}}
             </span>
 
             <!-- delta value STARTS -->
             <span class="delta-value">
               <span class="delta-arrow">
-                <span *ngIf="element.confirmedTotalDelta > 0">
-                  <mat-icon class="red-bright">arrow_drop_up</mat-icon>
+                <span *ngIf="element.confirmedTotalDelta > 0" class="red-bright">
+                  +{{element.confirmedTotalDelta | number: '1.0-0'}}
                 </span>
                 <span *ngIf="element.confirmedTotalDelta < 1"
                       class="green-bright">-</span>
               </span>
-              <span class="gray"
-                    *ngIf="element.confirmedTotalDelta != 0">
-                {{element.confirmedTotalDelta | number: '1.0-0'}}
-              </span>
             </span>
             <!-- delta value ENDS -->
-
 
           </td>
         </ng-container>
