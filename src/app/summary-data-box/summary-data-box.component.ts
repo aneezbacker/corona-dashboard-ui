@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DataService} from '../data.service';
+import {UtilService} from '../util.service';
 
 @Component({
   selector: 'app-summary-data-box',
@@ -22,7 +23,7 @@ export class SummaryDataBoxComponent implements OnInit {
 
   summaryData: any;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, public utilService: UtilService) {
   }
 
   ngOnInit(): void {
@@ -30,5 +31,4 @@ export class SummaryDataBoxComponent implements OnInit {
       this.summaryData = data;
     });
   }
-
 }

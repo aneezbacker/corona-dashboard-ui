@@ -1,7 +1,19 @@
 [
   {
     "state": "Andhra Pradesh",
-    "confirmed": 5,
+    "confirmed": 7,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Assam",
+    "confirmed": 0,
     "cured": 0,
     "deaths": 0
   },
@@ -12,86 +24,92 @@
     "deaths": 1
   },
   {
-    "state": "Chandigarh (UT)",
-    "confirmed": 5,
-    "cured": 0,
-    "deaths": 0
-  },
-  {
     "state": "Chattisgarh",
     "confirmed": 1,
     "cured": 0,
     "deaths": 0
   },
   {
-    "state": "Delhi (UT)",
-    "confirmed": 29,
-    "cured": 5,
-    "deaths": 1
+    "state": "Goa",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
   },
   {
     "state": "Gujarat",
-    "confirmed": 18,
+    "confirmed": 29,
     "cured": 0,
     "deaths": 1
   },
   {
     "state": "Haryana",
-    "confirmed": 21,
-    "cured": 0,
+    "confirmed": 26,
+    "cured": 11,
     "deaths": 0
   },
   {
     "state": "Himachal Pradesh",
-    "confirmed": 2,
+    "confirmed": 3,
     "cured": 0,
-    "deaths": 0
+    "deaths": 1
   },
   {
-    "state": "Jammu & Kashmir (UT)",
-    "confirmed": 4,
+    "state": "Jharkhand",
+    "confirmed": 0,
     "cured": 0,
     "deaths": 0
   },
   {
     "state": "Karnataka",
-    "confirmed": 26,
+    "confirmed": 37,
     "cured": 2,
     "deaths": 1
   },
   {
     "state": "Kerala",
-    "confirmed": 52,
-    "cured": 3,
-    "deaths": 0
-  },
-  {
-    "state": "Ladakh (UT)",
-    "confirmed": 13,
-    "cured": 0,
+    "confirmed": 95,
+    "cured": 4,
     "deaths": 0
   },
   {
     "state": "Madhya Pradesh",
-    "confirmed": 4,
+    "confirmed": 7,
     "cured": 0,
     "deaths": 0
   },
   {
     "state": "Maharashtra",
-    "confirmed": 67,
+    "confirmed": 87,
     "cured": 0,
     "deaths": 2
   },
   {
-    "state": "Odisha",
-    "confirmed": 2,
+    "state": "Manipur",
+    "confirmed": 0,
     "cured": 0,
     "deaths": 0
   },
   {
-    "state": "Pondicherry (UT)",
-    "confirmed": 1,
+    "state": "Meghalaya",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Mizoram",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Nagaland",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Odisha",
+    "confirmed": 2,
     "cured": 0,
     "deaths": 0
   },
@@ -103,20 +121,38 @@
   },
   {
     "state": "Rajasthan",
-    "confirmed": 24,
+    "confirmed": 33,
     "cured": 3,
     "deaths": 0
   },
   {
+    "state": "Sikkim",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
     "state": "Tamil Nadu",
-    "confirmed": 7,
+    "confirmed": 12,
     "cured": 1,
     "deaths": 0
   },
   {
     "state": "Telengana",
-    "confirmed": 22,
+    "confirmed": 32,
     "cured": 1,
+    "deaths": 0
+  },
+  {
+    "state": "Tripura",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Uttar Pradesh",
+    "confirmed": 33,
+    "cured": 9,
     "deaths": 0
   },
   {
@@ -126,14 +162,56 @@
     "deaths": 0
   },
   {
-    "state": "Uttar Pradesh",
-    "confirmed": 27,
-    "cured": 9,
+    "state": "West Bengal",
+    "confirmed": 7,
+    "cured": 0,
+    "deaths": 1
+  },
+  {
+    "state": "Andaman and Nicobar Islands (UT)",
+    "confirmed": 0,
+    "cured": 0,
     "deaths": 0
   },
   {
-    "state": "West Bengal",
+    "state": "Chandigarh (UT)",
+    "confirmed": 6,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Dadra & Nagar Haveli and Daman & Diu (UT)",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Delhi (UT)",
+    "confirmed": 31,
+    "cured": 6,
+    "deaths": 1
+  },
+  {
+    "state": "Jammu & Kashmir (UT)",
     "confirmed": 4,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Ladakh (UT)",
+    "confirmed": 13,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Lakshadweep (UT)",
+    "confirmed": 0,
+    "cured": 0,
+    "deaths": 0
+  },
+  {
+    "state": "Pondicherry (UT)",
+    "confirmed": 1,
     "cured": 0,
     "deaths": 0
   }

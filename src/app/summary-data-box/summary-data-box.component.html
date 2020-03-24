@@ -30,7 +30,8 @@
             <span *ngIf="summaryData.curedDelta > 0"><mat-icon class="green-bright">arrow_drop_up</mat-icon></span>
             <span *ngIf="summaryData.curedDelta < 1" class="green-bright">-</span>
           </span>
-          <span *ngIf="summaryData.curedDelta != 0" class="case-type">{{summaryData.curedDelta | number: '1.0-0'}}</span>
+          <span *ngIf="summaryData.curedDelta != 0"
+                class="case-type">{{summaryData.curedDelta | number: '1.0-0'}}</span>
         </span>
       </mat-card-subtitle>
     </mat-card-content>
@@ -49,7 +50,9 @@
             <span *ngIf="summaryData.activeDelta < 0"><mat-icon class="green-bright">arrow_drop_down</mat-icon></span>
             <span *ngIf="summaryData.activeDelta == 0" class="green-bright">-</span>
           </span>
-          <span *ngIf="summaryData.activeDelta != 0">{{summaryData.activeDelta | number: '1.0-0'}}</span>
+          <span
+            *ngIf="summaryData.activeDelta != 0">{{utilService.abs(summaryData.activeDelta) | number: '1.0-0'}}
+          </span>
         </span>
       </mat-card-subtitle>
     </mat-card-content>

@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import {DataService} from '../data.service';
+import {UtilService} from '../util.service';
 
 
 export interface StateWiseDistribution {
@@ -18,13 +19,13 @@ export interface StateWiseDistribution {
 })
 export class HomePageComponent implements OnInit {
 
-  displayedColumns = ['state', 'deaths', 'cured', 'confirmed'];
+  displayedColumns = ['state', 'deathsTotal', 'curedTotal', 'activeTotal', 'confirmedTotal'];
   dataSource: any;
 
   @ViewChild(MatSort, {static: true})
   sort: MatSort;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, public utilService: UtilService) {
   }
 
   ngOnInit(): void {
@@ -32,11 +33,20 @@ export class HomePageComponent implements OnInit {
   }
 
   loadStateWiseDistributionData(): void {
-    this.dataService.getSummary('stateWiseDistribution').subscribe(data => {
-      this.dataSource = new MatTableDataSource(data);
-      this.sort.sort({id: 'confirmed', start: 'desc', disableClear: false});
+    this.dataService.getSummary('stateWiseCasesSummary').subscribe(data => {
+
+
+      const scArr = Object.keys(data.scSummaryMap).map((key) => data.scSummaryMap[key]);
+
+      console.log(scArr);
+
+      this.dataSource = new MatTableDataSource(scArr);
+
+
+      this.sort.sort({id: 'confirmedTotal', start: 'desc', disableClear: true});
       this.dataSource.sort = this.sort;
+
+
     });
   }
-
 }

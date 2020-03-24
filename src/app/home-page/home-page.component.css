@@ -22,4 +22,18 @@ mat-table {
   font-size: small;
 }
 
+.delta-arrow{
+  font-size: small;
+  padding-top: 0px;
+}
 
+.delta-value {
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+}
+
+.mat-icon-table-size{
+  font-size: small;
+  padding-top: 6px;
+}
