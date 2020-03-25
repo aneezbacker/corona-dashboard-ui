@@ -122,3 +122,11 @@ mat-divider {
 .no-underline {
   text-decoration: none;
 }
+
+.snackbar-background {
+  background: #F79A03;
+}
+
+.snackbar-text{
+  color:#FFFFFF;
+}

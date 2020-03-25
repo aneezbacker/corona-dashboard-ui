@@ -39,7 +39,8 @@ export class HomePageComponent implements OnInit {
     this.snackBar.open(message, action, {
       duration: 5000,
       verticalPosition: 'top',
-      horizontalPosition: 'center'
+      horizontalPosition: 'center',
+      panelClass: ['snackbar-background', 'snackbar-text']
     });
   }
 
