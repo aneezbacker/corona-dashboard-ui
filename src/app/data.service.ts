@@ -16,4 +16,10 @@ export class DataService {
     const randomNo = new Date().getTime();  // random id to append to request to prevent caching
     return this.http.get(environment.cdnUrl + '/summaryData/' + dataSource + '.json?reqId=' + randomNo);
   }
+
+  public getTestingCentre(): Observable<any> {
+    const randomNo = new Date().getTime();  // random id to append to request to prevent caching
+    return this.http.get('https://storage.googleapis.com/corona-dashboard-files-bucket/summaryData/testingCentres.json?reqId=' + randomNo);
+  }
+
 }

@@ -1,0 +1,806 @@
+[
+  {
+    "state": "Andaman & Nicobar Islands",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "Regional Medical Research Centre",
+        "district": "Port Blair",
+        "address": "13, Dollygunj, South Andaman, Port Blair",
+        "phone": "03192 251 158"
+      }
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "count": 3,
+    "hospitals": [
+      {
+        "name": "Sri Venkateswara Institute of Medical Sciences",
+        "district": "Tirupati",
+        "address": "Alipiri Rd, Sri Padmavati Mahila Visvavidyalayam, Tirupati",
+        "phone": "0877 228 7777"
+      },
+      {
+        "name": "Rangaraya Medical College",
+        "district": "Kakinada",
+        "address": "Pithampuram Road, Kakinada",
+        "phone": "0884 236 3401"
+      },
+      {
+        "name": "Sidhartha Medical College",
+        "district": "Vijayawada",
+        "address": "NH 16 Service Rd, beside Dr NTR University of Health Sciences, Gunadala, Vijayawada",
+        "phone": "0866 245 0390"
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "count": 4,
+    "hospitals": [
+      {
+        "name": "Gauhati Medical College",
+        "district": "Guwahati",
+        "address": "Narakasur Hilltop, Bhangagarh, Guwahati",
+        "phone": ""
+      },
+      {
+        "name": "Regional Medical Research Center",
+        "district": "Dibrugarh",
+        "address": "Bokul, Lahowal, Dibrugarh",
+        "phone": "0373 238 1494"
+      },
+      {
+        "name": "Jorhat Medical College",
+        "district": "Jorhat ",
+        "address": "Kushal Konwar Path, Barbheta, Jorhat",
+        "phone": "0376 237 0107"
+      },
+      {
+        "name": "Silchar Medical College",
+        "district": "Silchar",
+        "address": "Ghungoor Road, Beside Indian Post, Masimpur, Uttar Krishnapur Pt III",
+        "phone": "03842 229 110"
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": "Rajendra Memorial Research Institute of Medical Sciences",
+        "district": "Patna",
+        "address": "Sadikpur, Patna",
+        "phone": "0612 263 6651"
+      },
+      {
+        "name": "Darbhanga Medical College",
+        "district": "Darbhanga",
+        "address": "DMCH Rd, Allalpatti, Laheriasarai, Darbhanga",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "state": "Chandigarh",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": " Post Graduate Institute of Medical Education & Research",
+        "district": "Chandigarh",
+        "address": "Madhya Marg, Sector 12, Chandigarh",
+        "phone": "0172 274 7585"
+      },
+      {
+        "name": "Government Medical College",
+        "district": "Chandigarh",
+        "address": "Post Graduate Government College, Madhya Marg, 11D, Sector 11, Chandigarh",
+        "phone": "0172 274 0597"
+      }
+    ]
+  },
+  {
+    "state": "Chattisgarh",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": " All India Institute of Medical Sciences",
+        "district": "Raipur",
+        "address": "Great Eastern Rd, AIIMS Campus, Tatibandh, Raipur",
+        "phone": "077125 72240"
+      },
+      {
+        "name": "Late Baliram Kashyap M Govt. Medical College",
+        "district": "Bastar",
+        "address": "Dimrapal, Jagdalpur",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "state": "Delhi",
+    "count": 9,
+    "hospitals": [
+      {
+        "name": "India Institute Medical Sciences",
+        "district": "New Delhi",
+        "address": "Sri Aurobindo Marg, Ansari Nagar, Ansari Nagar East, New Delhi",
+        "phone": "011 2658 8500"
+      },
+      {
+        "name": "Lady Hardinge Medical College ",
+        "district": "New Delhi",
+        "address": "Lady Hardinge Medical College, Connaught Place, New Delhi",
+        "phone": "011 2336 3728"
+      },
+      {
+        "name": " National Centre for Disease Contro",
+        "district": "New Delhi",
+        "address": "22, Sham Nath Marg, Civil Lines, New Delhi",
+        "phone": "011 2391 3148"
+      },
+      {
+        "name": "Ram Manohar Lohia Hospital",
+        "district": "New Delhi",
+        "address": " Baba Kharak Singh Rd, near Gurudwara Bangla Sahib, Ram Manohar Lohia Hospital, Type III, Connaught Place, New Delhi",
+        "phone": "011 2340 4286"
+      },
+      {
+        "name": " Institute of Liver & Biliary Sciences",
+        "district": "New Delhi",
+        "address": "D1 ILBS Road, Vasant Kunj, New Delhi",
+        "phone": "011 4630 0000"
+      },
+      {
+        "name": "Army Hospital Research & Referral",
+        "district": "New Delhi",
+        "address": "Military Hospital Road Near, Subroto Park, Dhaula Kuan, New Delhi",
+        "phone": "011 2333 8199"
+      },
+      {
+        "name": "Lal Path Labs",
+        "district": "New Delhi",
+        "address": "National Reference laboratory, B7 Rd, Block E, Sector 18, Rohini, New Delhi",
+        "phone": "011 3025 8600"
+      },
+      {
+        "name": "Dr Dangs Lab",
+        "district": "New Delhi",
+        "address": "Aurobindo Market, C2/1, S.D.A. Aurobindo Marg Next to, New Delhi",
+        "phone": "099999 92020"
+      },
+      {
+        "name": "Laboratory Services",
+        "district": "New Delhi",
+        "address": "Indraprastha Apollo Hospitals, Mathura Rd, Sarita Vihar, New Delhi",
+        "phone": "1860 500 1066"
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "count": 6,
+    "hospitals": [
+      {
+        "name": "BJ Medical College",
+        "district": "Ahemdabad",
+        "address": "BJ medical college, Asarwa, Ahmedabad",
+        "phone": "079 2268 0074"
+      },
+      {
+        "name": "MP Shah Govt Medical College",
+        "district": "Jamnagar",
+        "address": "Pandit Nehru Marg, Indradeep Society, Jamnagar",
+        "phone": "0288 255 3515"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Surat ",
+        "address": "Opp Income Tax Department Office, Majura Gate, Surat",
+        "phone": "0261 224 4175"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Bhavnagar",
+        "address": "Near State Road Transport Corporation Bus Stand, Bhavnagar",
+        "phone": "0278 251 0236"
+      },
+      {
+        "name": "Unipath Specialty laboratory limited",
+        "district": "Ahmedabad",
+        "address": " 102, 1st Floor, Sanoma Plaza, Sheth Mangald Road, Opp. Parimal Garden, Ellisbridge, Ahmedabad",
+        "phone": "079 4900 6800"
+      },
+      {
+        "name": "Supratech Micropath Laboratory & Research Institute Pvt Ltd",
+        "district": "Ahmedabad",
+        "address": "Neuberg Supratech, Ground Floor, Kedar Builiding, Opp. Krupa petrol Pump Parimal garden",
+        "phone": "079 4040 8181"
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": "Pt. B.D. Sharma Post Graduate Inst. of Med. Sciences",
+        "district": "Rohtak",
+        "address": "SH 16A, Dev Colony, Rohtak",
+        "phone": "01262 211 307"
+      },
+      {
+        "name": "BPS Govt. Medical College",
+        "district": "Sonipat",
+        "address": "Ganaur - Gohana Rd, Khanpur Kalan, Sonipat",
+        "phone": "01263 283 025"
+      },
+      {
+        "name": "Strand Life Sciences",
+        "district": "Gurgaon",
+        "address": "A-17, Info Technology Park, Sector 34, Gurugram",
+        "phone": ""
+      },
+      {
+        "name": "SRL Limited",
+        "district": "Gurgaon",
+        "address": "SRL, Reference lab, GP-26, Maruti Industrial Estate, Udyog Vihar, Sector 18, Gurugram",
+        "phone": "0124 441 2121"
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "count": 4,
+    "hospitals": [
+      {
+        "name": "Indira Gandhi Medical College",
+        "district": "Shimla",
+        "address": "Ridge Sanjauli Rd, Lakkar Bazar, Shimla",
+        "phone": "0177 265 4713"
+      },
+      {
+        "name": "Dr. Rajendra Prasad Govt. Medical College",
+        "district": "Kangra",
+        "address": "Tanda Hospital Rd, Kangra, Tanda",
+        "phone": "0189 226 7115"
+      }
+    ]
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "count": 4,
+    "hospitals": [
+      {
+        "name": "Govt. Medical College",
+        "district": "Jammu",
+        "address": " Maheshpura, chowk, Bakshi Nagar, Jammu",
+        "phone": "0191 258 4247"
+      },
+      {
+        "name": "Command Hospital ",
+        "district": "Udhampur",
+        "address": "Raghunathpura, Udhampur",
+        "phone": "090856 23485"
+      },
+      {
+        "name": "Sher-i-Kashmir Institute of Medical Sciences",
+        "district": "Srinagar ",
+        "address": "SKIMS Main Rd, Soura, Srinagar",
+        "phone": "0194 240 1013"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Srinagar",
+        "address": "NJammu and Kashmir, Bemina, Srinagar",
+        "phone": "0194 245 3114"
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "MGM Medical College & Hospital",
+        "district": "Jamshedpur",
+        "address": "Dimna Rd, Hill View Colony, Mango, Jamshedpur",
+        "phone": "0657 236 0859"
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "count": 8,
+    "hospitals": [
+      {
+        "name": "Hassan Inst. of Med. Sciences",
+        "district": "Hassan",
+        "address": "Shri panchamukhi medicals and clinic, opp. govt high school, Hassan",
+        "phone": "081722 31699"
+      },
+      {
+        "name": "Mysore Medical College & Research Institute",
+        "district": "Mysuru",
+        "address": "Irwin Road, next to Railway Station, Mysore",
+        "phone": "0821 252 0512"
+      },
+      {
+        "name": " Shimoga Inst. of Medical Sciences",
+        "district": "Shimoga",
+        "address": "Sagar Road, Shivamogga",
+        "phone": "081822 29933"
+      },
+      {
+        "name": "Command Hospital",
+        "district": "Bangalore Urban",
+        "address": "Cambridge Rd, Cambridge Layout, Jogupalya, Bengaluru",
+        "phone": "080 2530 1215"
+      },
+      {
+        "name": " Bangalore Medical College & Research Institute",
+        "district": "Bangalore Urban",
+        "address": " Fort, Krishna Rajendra Rd, Bengaluru",
+        "phone": "080 2670 1529"
+      },
+      {
+        "name": " National Institute of Virology, Bangalore Field Unit",
+        "district": "Bangalore Urban",
+        "address": "Jaya Nagar, 1st Block, Jayanagar, Bengaluru",
+        "phone": ""
+      },
+      {
+        "name": " Gulbarga Institute of Medical Sciences",
+        "district": "Gulbarga",
+        "address": "Sedam Rd,Veeresh Nagar Cross, behind MRMC, Gulbarga",
+        "phone": "084722 27252"
+      },
+      {
+        "name": "Neuberg Anand Reference Laboratory",
+        "district": "Bangalore Urban",
+        "address": " Aanand Tower, 54, Bowring Hospital Rd, Shivajinagar, Bengaluru",
+        "phone": "1800 425 1974"
+      }
+    ]
+  },
+  {
+    "state": "Kerala",
+    "count": 6,
+    "hospitals": [
+      {
+        "name": "National Institute of Virology Field Unit",
+        "district": "Allapuzzha",
+        "address": "Vandanam, Kerala",
+        "phone": ""
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Thiruvananthapuram",
+        "address": "Ulloor-Akkulam Road, near SAT hospital Medical College Junction, Thiruvananthapuram",
+        "phone": "0471 252 8300"
+      },
+      {
+        "name": " Govt. Medical College",
+        "district": "Kozhikode",
+        "address": "17 Medical College Road Medical College Junction, Near Police Station, Kozhikode",
+        "phone": "0495 235 0216"
+      },
+      {
+        "name": " Govt. Medical College",
+        "district": "Thrissur",
+        "address": "M. G. Kavu, Thrissur",
+        "phone": "0487 220 0310"
+      },
+      {
+        "name": " Rajiv Gandhi Center for Biotechnology",
+        "district": "Thiruvananthapuram",
+        "address": "Melarannoor Road Behind Central Jail Poojapura, Thycaud, Thiruvananthapuram",
+        "phone": "0471 252 9400"
+      },
+      {
+        "name": "Sree Chitra Tirunal Institute of Medical Sciences",
+        "district": "Thiruvananthapuram",
+        "address": "Jai Nagar Rd, Chalakkuzhi, Thiruvananthapuram",
+        "phone": "0471 244 3152"
+      }
+    ]
+  },
+  {
+    "state": "Maharastra",
+    "count": 12,
+    "hospitals": [
+      {
+        "name": "National Institute of Virology",
+        "district": "Pune",
+        "address": "20-A, P B No 11, Dr Ambedkar Road, Pune",
+        "phone": "020 2612 7301"
+      },
+      {
+        "name": "Seth GS Medical College & KEM Hospital",
+        "district": "Mumbai City",
+        "address": "Acharya Donde Marg, Parel, Mumbai",
+        "phone": "022 2410 7000"
+      },
+      {
+        "name": " Indira Gandhi Govt. Medical College",
+        "district": "Nagpur",
+        "address": "Mayo Hospital, Central Ave, Mominpura, Nagpur",
+        "phone": "0712 272 5423"
+      },
+      {
+        "name": "Kasturba Hospital for Infectious Diseases",
+        "district": "Mumbai City",
+        "address": " Sane Guruji Marg, Arya Nagar, Chinchpokli, Mumbai",
+        "phone": ""
+      },
+      {
+        "name": " National Institute of Virology Field Unit",
+        "district": "Mumbai City",
+        "address": " Jehangir Merwanji Street, Parel, Mumbai",
+        "phone": "022 2419 2000"
+      },
+      {
+        "name": "Armed Forces Medical College",
+        "district": "Pune",
+        "address": "Southern Command, Solapur Road, Wanowrie, near Race Course, Pune",
+        "phone": "020 2337 3158"
+      },
+      {
+        "name": " BJ Medical College",
+        "district": "Pune",
+        "address": " Jai Prakash Narayan Road, Railway Station Rd, near Pune",
+        "phone": "020 2612 8000"
+      },
+      {
+        "name": "Thyrocare Technologies",
+        "district": "Mumbai City",
+        "address": "D-37/1 MIDC Turbhe Opp Sandoz, MIDC Industrial Area, Sanpada, Navi Mumbai",
+        "phone": ""
+      },
+      {
+        "name": "Suburban Diagnostics",
+        "district": "Mumbai City",
+        "address": "1st floor, Harbhaajan Building, Above HDFC bank, CST Road, opp. Petrol pump, Kalina, Santacruz East, Mumbai",
+        "phone": "022 6170 0000"
+      },
+      {
+        "name": " Metropolis Healthcare Ltd",
+        "district": "Mumbai City",
+        "address": "250-D, Udyog Bhavan Hind Cycle Marg, behind Glaxo, Worli, Mumbai",
+        "phone": "022 3399 3939"
+      },
+      {
+        "name": "Sir H.N. Reliance Foundation Hospital and Research Centre",
+        "district": "Mumbai City",
+        "address": "Prarthana Samaj, Raja Rammohan Roy Rd, Charni Road East, Khetwadi, Girgaon, Mumbai",
+        "phone": "1800 22 1166"
+      },
+      {
+        "name": "SRL Limited",
+        "district": "Mumbai City",
+        "address": "Plot No 1, Prime Square building, Gaiwadi Industrial, estate, Next to Patel Petrol Pump, Opposite Mahesh Nagar, S.V. Road,, Goregaon West, Mumbai",
+        "phone": "1800 22 2000"
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "count": 4,
+    "hospitals": [
+      {
+        "name": "All India Institute of Medical Sciences",
+        "district": "Bhopal",
+        "address": "AIIMS Campus Rd, AIIMS Campus, Saket Nagar Habib Ganj, Bhopal",
+        "phone": "0755 298 2607"
+      },
+      {
+        "name": "National Institute for Research on Tribal Health",
+        "district": "Jabalpur",
+        "address": "Nagpur Road, near NSCB Medical College, Dhanvantri Nagar, Shastri Nagar, Jabalpur",
+        "phone": "076123 70800"
+      },
+      {
+        "name": "Mahatma Gandhi Memorial Medical College",
+        "district": "Indore",
+        "address": "A.B.Road, Indore",
+        "phone": "0731 252 7383"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Bhopal",
+        "address": "Sultania Rd, near Hamidia Hospital, Royal Market, Bhopal",
+        "phone": "0755 254 0590"
+      }
+    ]
+  },
+  {
+    "state": "Manipur",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": "Jawaharlal Nehru Institute of Med. Sciences, Imphal-East",
+        "district": "Imphal",
+        "address": "Porompat, Imphal",
+        "phone": "0385 244 3144"
+      },
+      {
+        "name": "Regional Institute of Medical Sciences",
+        "district": "Imphal",
+        "address": "Lamphel Road, Lamphelpat, Imphal",
+        "phone": "0385 241 1484"
+      }
+    ]
+  },
+  {
+    "state": "Meghalaya ",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "North Eastern Indira Gandhi Regional Institute of Health & Medical Sciences",
+        "district": "East Khasi",
+        "address": "Department of Radiology & Imaging, NEIGRIHMS, Shillong",
+        "phone": "0364 253 8013"
+      }
+    ]
+  },
+  {
+    "state": "Odisha ",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "Regional Medical Research Centre",
+        "district": "Bhubaneshwar",
+        "address": "NALCO Nagar, Chandrasekharpur, Bhubaneswar",
+        "phone": "0674 230 1322"
+      }
+    ]
+  },
+  {
+    "state": "Puducherry ",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "Jawaharlal Institute of Postgraduate Medical Education & Research",
+        "district": "Puducherry",
+        "address": "Jipmer Campus Rd, Gorimedu, Dhanvantari Nagar, Puducherry",
+        "phone": "0413 227 1301"
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "count": 2,
+    "hospitals": [
+      {
+        "name": "Govt. Medical College",
+        "district": "Amristar",
+        "address": "Medical Enclave, Amritsar",
+        "phone": "0183 242 6918"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Patiala",
+        "address": "Sangrur Rd, New Lal Bagh Colony, Patiala",
+        "phone": "0175 221 2018"
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan ",
+    "count": 7,
+    "hospitals": [
+      {
+        "name": "Sawai Man Singh Medical College",
+        "district": "Jaipur",
+        "address": "Jawahar Lal Nehru Marg, Gangawal Park, Adarsh Nagar, Jaipur",
+        "phone": "0141 270 8836"
+      },
+      {
+        "name": "Dr. Sampurnanand Medical College",
+        "district": "Jodhpur",
+        "address": "Residency Road, Near Sriram Excellency Hotel, Sector-D, Shastri Nagar, opposite Petrol Pump, Jodhpur",
+        "phone": "0291 243 4374"
+      },
+      {
+        "name": " Jhalawar Medical College",
+        "district": "Jhalawar",
+        "address": "N.H.-12, Kota Rd, Jhalawar",
+        "phone": "07432 233 388"
+      },
+      {
+        "name": "RNT Medical College",
+        "district": "Udaipur",
+        "address": "Court Chowk, City's Prime Healthcare Area, Udaipur",
+        "phone": "0294 241 8258"
+      },
+      {
+        "name": "SP Medical College",
+        "district": "Bikaner",
+        "address": "S.p.medical college, PBM Hospital, Bikaner",
+        "phone": "0151 222 0115"
+      },
+      {
+        "name": "All India Institute of Medical Sciences",
+        "district": "Jodhpur",
+        "address": " Basni Industrial Area, MIA 2nd Phase, Basni, Jodhpur",
+        "phone": "0291 274 0741"
+      },
+      {
+        "name": " JLN Medical College",
+        "district": "Ajmer",
+        "address": " JLN.medical college, opp. Patel Stadium,",
+        "phone": "0145 242 5050"
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu ",
+    "count": 8,
+    "hospitals": [
+      {
+        "name": "King Institute of Preventive Medicine & Research",
+        "district": "Chennai",
+        "address": "Guindy, Chennai",
+        "phone": "044 2250 1520"
+      },
+      {
+        "name": "Madras Medical College",
+        "district": "Chennai",
+        "address": "Near Park Town Station, Park Town, Chennai",
+        "phone": "044 2530 5000"
+      },
+      {
+        "name": "Govt. Theni Medical College",
+        "district": "Theni",
+        "address": "opposite govt theni medical college, k. Villakku",
+        "phone": "04546 244 502"
+      },
+      {
+        "name": "Tirunelveli Medical College",
+        "district": "Tirunelveli",
+        "address": "3, High Ground Rd, Palayamkottai, Tirunelveli",
+        "phone": "0462 257 2733"
+      },
+      {
+        "name": "Govt. Medical College",
+        "district": "Thiruvarur",
+        "address": "Thandalai, Thiruvarur, NH-67, Nagappattinam Thiruvarur Thanjavur Trichy Highway, Thiruvarur",
+        "phone": ""
+      },
+      {
+        "name": "Kumar Mangalam Govt. Medical College",
+        "district": "Salem",
+        "address": "8, Fort Main Rd, Sewapet, Salem",
+        "phone": "0427 238 3313"
+      },
+      {
+        "name": "Dept. of Clinical Virology",
+        "district": "Vellore",
+        "address": " IDA Scudder Rd, Vellore",
+        "phone": "0416 228 1000"
+      },
+      {
+        "name": "Department of Laboratory Services, Apollo Hospitals Enterprise Ltd",
+        "district": "Chennai",
+        "address": "'Sunny Side', East Block, 3rd Floor, 8/17, Shafee Mohamed Road, Chennai",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "count": 3,
+    "hospitals": [
+      {
+        "name": "Gandhi Medical College",
+        "district": "Hyderabad",
+        "address": "Gandhi Hospital, Musheerabad, Padmarao Nagar, Secunderabad",
+        "phone": "040 2750 2742"
+      },
+      {
+        "name": "Osmania Medical College",
+        "district": "Hyderabad",
+        "address": "5-1-876, Turrebaz Khan Rd, Troop Bazaar, Koti, Hyderabad",
+        "phone": "040 2465 3992 "
+      },
+      {
+        "name": "Laboratory Services, Apollo Hospitals",
+        "district": "Hyderabad",
+        "address": "Rd Number 72, opp. Bharatiya Vidya Bhavan School, Jubilee Hills, Hyderabad",
+        "phone": "1860 500 1066"
+      }
+    ]
+  },
+  {
+    "state": "Tripura",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "Government Medical College",
+        "district": "West Tripura",
+        "address": "79 Tilla, Agartala",
+        "phone": " 0381 235 6701 "
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "count": 6,
+    "hospitals": [
+      {
+        "name": "King George Medical University",
+        "district": "Lucknow",
+        "address": "Shah Mina Rd, Chowk, Lucknow",
+        "phone": "0522 225 7540"
+      },
+      {
+        "name": ".Institute of Medical Sciences, Banaras Hindu University",
+        "district": "Varanasi",
+        "address": "Aurobindo Colony, Banaras Hindu University Campus, Varanasi",
+        "phone": "0542 236 7568"
+      },
+      {
+        "name": "Jawaharlal Nehru Medical College",
+        "district": "Aligarh",
+        "address": "Medical Rd, AMU Campus, Aligarh",
+        "phone": ""
+      },
+      {
+        "name": "Command Hospital ",
+        "district": "Lucknow",
+        "address": "Command Hospital, Lucknow",
+        "phone": ""
+      },
+      {
+        "name": "Lala Lajpat Rai Memorial Medical College,",
+        "district": "Merut",
+        "address": "T Garh Road, Jai Bhim Nagar",
+        "phone": "0121 276 0888"
+      },
+      {
+        "name": "Sanjay Gandhi Post Graduate Institute",
+        "district": "Lucknow",
+        "address": "New PMSSY Rd, Raibareli Rd, Lucknow",
+        "phone": "0522 266 8700"
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "count": 1,
+    "hospitals": [
+      {
+        "name": "Government Medical College",
+        "district": "Haldwani",
+        "address": "Rampur Rd, Rampur, Haldwani",
+        "phone": " 05946 282 824"
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "count": 3,
+    "hospitals": [
+      {
+        "name": "National Institute of Cholera and Enteric Diseases",
+        "district": "Kolkata",
+        "address": "P- C.I.T. Scheme XM, Beleghata, 33, CIT Rd, Subhas Sarobar Park, Phool Bagan, Beleghata, Kolkata",
+        "phone": "033 2363 3373"
+      },
+      {
+        "name": "Institute of Post Graduate Medical Education and Research",
+        "district": "Kolkata",
+        "address": "244, Acharya Jagadish Chandra Bose Rd, Bhowanipore, Kolkata",
+        "phone": "033 2204 1101"
+      },
+      {
+        "name": "Midnapore Medical College",
+        "district": "Paschim Medinipur",
+        "address": "Vidyasagar Road Midnapor",
+        "phone": "03222 222 400"
+      }
+    ]
+  }
+]

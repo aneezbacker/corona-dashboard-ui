@@ -2,6 +2,10 @@ runtime: python27
 api_version: 1
 threadsafe: true
 handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+  
 - url: /(.*\.(gif|png|jpg|css|js|json)(|\.map))$
   static_files: dist/corona-dashboard-ui/\1
   upload: dist/(.*)(|\.map)

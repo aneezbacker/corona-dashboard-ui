@@ -1,52 +1,17 @@
 <div class="parent-container">
-  <section class="mat-typography">
-    <span class="font-h2">Humour in times of Corona</span>
-    <mat-divider></mat-divider>
-    <br/>
 
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_bane.jpg">
-    </mat-card>
+  <span class="font-h2">Humour in times of Corona</span>
+  <mat-divider></mat-divider>
+  <br/>
 
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_kiran.jpg">
-    </mat-card>
+  <ng-container *ngIf="imagesList != null">
+    <div class="div-scrollable" *ngFor="let image of imagesList" (deferLoad)="image.show = true">
+      <ng-container *ngIf="image.show">
+        <mat-card class="mat-card-container">
+          <img mat-card-image src={{image.url}}>
+        </mat-card>
+      </ng-container>
+    </div>
+  </ng-container>
 
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_beer.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_bhagwaan.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_cases.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_hand.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_houseplant.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_meme.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_men.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_swim.jpg">
-    </mat-card>
-
-    <mat-card class="mat-card-container">
-      <img mat-card-image src="./assets/images/humour_whf.jpg">
-    </mat-card>
-
-  </section>
 </div>

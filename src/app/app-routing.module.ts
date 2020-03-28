@@ -9,6 +9,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {TravelComponent} from './travel/travel.component';
 import {HelplineComponent} from './helpline/helpline.component';
 import {HumourComponent} from './humour/humour.component';
+import {TestingCentresComponent} from './testing-centres/testing-centres.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'global-cases', component: GlobalCasesComponent},
   {path: 'travel', component: TravelComponent},
   {path: 'helpline', component: HelplineComponent},
+  {path: 'testing-centres', component: TestingCentresComponent},
   {path: 'health-tips', component: HealthTipsComponent},
   {path: 'latest-news', component: LatestNewsComponent},
   {path: 'humour', component: HumourComponent},

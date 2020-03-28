@@ -19,6 +19,7 @@ mat-divider {
 
 .src-data {
   font-size: x-small;
+  font-weight: normal;
   color: darkgray;
 }
 
@@ -67,10 +68,13 @@ mat-divider {
   color: #F94507;
 }
 
+.red-dark {
+  color: #7B1102;
+}
+
 .white {
   color: #FFFFFF;
 }
-
 
 .font-h2 {
   font-family: "Poppins, sans-serif";
@@ -83,6 +87,10 @@ mat-divider {
 
 .font-small {
   font-size: small;
+}
+
+.font-xsmall {
+  font-size: x-small;
 }
 
 .font-medium {
@@ -99,6 +107,11 @@ mat-divider {
 
 .font-bold {
   font-weight: bold;
+}
+
+.font-src {
+  font-size: x-small;
+  font-weight: normal;
 }
 
 .text-align-center {
@@ -127,6 +140,6 @@ mat-divider {
   background: #F79A03;
 }
 
-.snackbar-text{
-  color:#FFFFFF;
+.snackbar-text {
+  color: #FFFFFF;
 }

@@ -16,7 +16,8 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {SummaryDataBoxComponent} from './summary-data-box/summary-data-box.component';
 import {TravelComponent} from './travel/travel.component';
 import {HelplineComponent} from './helpline/helpline.component';
-import { HumourComponent } from './humour/humour.component';
+import {HumourComponent} from './humour/humour.component';
+import {TestingCentresComponent} from './testing-centres/testing-centres.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -29,6 +30,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+import {DeferLoadModule} from '@trademe/ng-defer-load';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     SummaryDataBoxComponent,
     TravelComponent,
     HelplineComponent,
-    HumourComponent
+    HumourComponent,
+    TestingCentresComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatBadgeModule,
     MatTabsModule,
     MatExpansionModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    DeferLoadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

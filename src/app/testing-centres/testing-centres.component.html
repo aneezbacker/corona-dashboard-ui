@@ -1,0 +1,62 @@
+<div class="parent-container">
+
+  <span class="font-h2">Testing for COVID-19</span>
+
+  <mat-divider></mat-divider>
+
+  <span>Testing for COVID-19 can be performed at below Government/Government-Approved Laboratories only</span>
+
+  <mat-divider></mat-divider>
+
+  <div class="testing-container">
+
+    <div class="title-container">
+        <span class="sub-title"> Laboratories
+          <span class="src-data">
+            (source: <a class="no-underline" href="https://www.mohfw.gov.in/" target="_blank">Govt. of india</a>)
+          </span>
+        </span>
+
+      <div>
+        <button mat-button (click)="toggleStateAccordion()"
+                class="button-accordion">{{statePanelOpenState ? 'Collapse' : 'Expand' }} All
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <mat-accordion multi #stateAccordion="matAccordion">
+
+        <ng-container *ngFor="let stateData of tcData">
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title class="mat-panel-title">
+                <span class="state-name">{{stateData.state}}</span>
+                <span class="lab-count">({{stateData.count}})</span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <ng-container *ngFor="let hospitalData of stateData.hospitals">
+              <span>
+                <span class="hospital-name">{{hospitalData.name}}</span> -
+                <span class="district-name">{{hospitalData.district}}</span>
+                <br/>
+                {{hospitalData.address}}
+                <br/>
+                <span>
+                  <mat-icon class="icon-phone">phone</mat-icon>
+                  <span class="card-subtitle-data">{{hospitalData.phone}}</span>
+                </span>
+              </span>
+              <br/><br/>
+            </ng-container>
+
+          </mat-expansion-panel>
+          <br/>
+        </ng-container>
+      </mat-accordion>
+    </div>
+  </div>
+
+</div>
