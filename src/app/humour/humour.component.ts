@@ -13,10 +13,8 @@ export class HumourComponent implements OnInit {
   imagesList = null;
 
   constructor(private dataService: DataService) {
-    console.log('-----------const');
     this.dataService.getSummary(this.imgCountFile).subscribe(data => {
       this.imgCount = data.count;
-      console.log('-----------this.imgCount: ' + this.imgCount);
 
       let imagesListArr = [];
       let arrIndex = 0;

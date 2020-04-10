@@ -32,6 +32,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import {DeferLoadModule} from '@trademe/ng-defer-load';
+import {HighchartsChartModule} from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {DeferLoadModule} from '@trademe/ng-defer-load';
     MatTabsModule,
     MatExpansionModule,
     MatSnackBarModule,
-    DeferLoadModule
+    DeferLoadModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

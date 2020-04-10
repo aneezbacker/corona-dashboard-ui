@@ -39,7 +39,9 @@
   <div>
     <span class="font-h2">State-wise Cases</span>
     <mat-divider></mat-divider>
+
     <!-- Interactive Map STARTS -->
+    <!--
     <div class="map-container">
       <iframe src='https://public.flourish.studio/visualisation/1579013/embed' frameborder='0' scrolling='no'
               style='width:100%;height:600px;'></iframe>
@@ -50,7 +52,27 @@
         </a>
       </div>
     </div>
+    -->
     <!-- Interactive Map ENDS -->
+
+    <div class="map-container">
+      <highcharts-chart
+        id="container"
+        [Highcharts]="Highcharts"
+
+        [constructorType]="chartConstructor"
+        [options]="chartOptions"
+
+
+        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
+
+    </div>
+
+
+
+
+
 
     <!-- state wise break down table STARTS -->
     <div>
@@ -63,13 +85,13 @@
         </ng-container>
 
         <!-- Deaths Column STARTS-->
-        <ng-container matColumnDef="deathsTotal">
+        <ng-container matColumnDef="deaths">
           <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header">Deaths</span></th>
           <td mat-cell *matCellDef="let element" class="text-align-center">
 
             <span
-              [ngClass]="{'font-bold': element.deathsTotal > 0, 'gray': element.deathsTotal == 0}">
-              {{element.deathsTotal | number: '1.0-0'}}
+              [ngClass]="{'font-bold': element.deaths > 0, 'gray': element.deaths == 0}">
+              {{element.deaths | number: '1.0-0'}}
             </span>
 
             <br/>
@@ -78,10 +100,10 @@
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.deathsTotalDelta > 0" class="red-bright">
-                  +{{element.deathsTotalDelta | number: '1.0-0'}}
+                <span *ngIf="element.deathsDelta > 0" class="red-bright">
+                  +{{element.deathsDelta | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.deathsTotalDelta < 1" class="green-bright">-</span>
+                <span *ngIf="element.deathsDelta < 1" class="green-bright">-</span>
               </span>
             </span>
             <!-- delta value ENDS -->
@@ -91,23 +113,23 @@
         <!-- Deaths Column ENDS-->
 
         <!-- Cured Column STARTS -->
-        <ng-container matColumnDef="curedTotal">
+        <ng-container matColumnDef="cured">
           <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header">Cured</span></th>
           <td mat-cell *matCellDef="let element" class="text-align-center">
 
             <span
-              [ngClass]="{'font-bold': element.curedTotal > 0, 'gray': element.curedTotal == 0}">
-              {{element.curedTotal | number: '1.0-0'}}
+              [ngClass]="{'font-bold': element.cured > 0, 'gray': element.cured == 0}">
+              {{element.cured | number: '1.0-0'}}
             </span>
 
             <!-- delta value STARTS -->
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.curedTotalDelta > 0" class="green-bright">
-                  +{{element.curedTotalDelta | number: '1.0-0'}}
+                <span *ngIf="element.curedDelta > 0" class="green-bright">
+                  +{{element.curedDelta | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.curedTotalDelta < 1" class="green-bright">-</span>
+                <span *ngIf="element.curedDelta < 1" class="green-bright">-</span>
               </span>
             </span>
             <!-- delta value ENDS -->
@@ -117,26 +139,26 @@
         <!-- Cured Column ENDS -->
 
         <!-- Sick Column STARTS -->
-        <ng-container matColumnDef="activeTotal">
+        <ng-container matColumnDef="active">
           <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header">Sick</span></th>
           <td mat-cell *matCellDef="let element" class="text-align-center">
 
             <span
-              [ngClass]="{'font-bold': element.activeTotal > 0, 'gray': element.activeTotal == 0}">
-              {{element.activeTotal | number: '1.0-0'}}
+              [ngClass]="{'font-bold': element.active > 0, 'gray': element.active == 0}">
+              {{element.active | number: '1.0-0'}}
             </span>
 
             <!-- delta value STARTS -->
             <span class="delta-value">
 
               <span class="delta-arrow">
-                <span *ngIf="element.activeTotalDelta > 0" class="red-bright">
-                  +{{utilService.abs(element.activeTotalDelta) | number: '1.0-0'}}
+                <span *ngIf="element.activeDelta > 0" class="red-bright">
+                  +{{utilService.abs(element.activeDelta) | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.activeTotalDelta < 0" class="green-bright">
-                  -{{utilService.abs(element.activeTotalDelta) | number: '1.0-0'}}
+                <span *ngIf="element.activeDelta < 0" class="green-bright">
+                  -{{utilService.abs(element.activeDelta) | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.activeTotalDelta == 0" class="green-bright">-</span>
+                <span *ngIf="element.activeDelta == 0" class="green-bright">-</span>
               </span>
             </span>
             <!-- delta value ENDS -->
@@ -147,21 +169,21 @@
         <!-- Sick Column ENDS -->
 
         <!-- Confirmed Column STARTS -->
-        <ng-container matColumnDef="confirmedTotal">
+        <ng-container matColumnDef="confirmed">
           <th mat-header-cell *matHeaderCellDef mat-sort-header><span class="table-header"> Confirmed</span></th>
           <td mat-cell *matCellDef="let element" class="text-align-center">
             <span
-              [ngClass]="{'font-bold color-confirmed': element.confirmedTotal > 0, 'gray': element.confirmedTotal == 0}">
-              {{element.confirmedTotal | number: '1.0-0'}}
+              [ngClass]="{'font-bold color-confirmed': element.confirmed > 0, 'gray': element.confirmed == 0}">
+              {{element.confirmed | number: '1.0-0'}}
             </span>
 
             <!-- delta value STARTS -->
             <span class="delta-value">
               <span class="delta-arrow">
-                <span *ngIf="element.confirmedTotalDelta > 0" class="red-bright">
-                  +{{element.confirmedTotalDelta | number: '1.0-0'}}
+                <span *ngIf="element.confirmedDelta > 0" class="red-bright">
+                  +{{element.confirmedDelta | number: '1.0-0'}}
                 </span>
-                <span *ngIf="element.confirmedTotalDelta < 1"
+                <span *ngIf="element.confirmedDelta < 1"
                       class="green-bright">-</span>
               </span>
             </span>
